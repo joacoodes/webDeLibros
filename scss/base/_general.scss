@@ -1,0 +1,59 @@
+/*HTML*/
+html{
+  margin: 0;
+  padding: 0;	
+  box-sizing: border-box;
+}
+
+/*Footer*/
+
+.footer{
+  background-color: #17a2b8;
+  color: #FFFFFF;
+  width: 100%;
+  margin-left: 0px;
+  padding-top: 10px;
+  position: absolute;
+  margin-bottom: 0;
+}
+
+.footer-list{
+  margin-top: 25px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+
+  li{
+    font-family: 'Rubik', sans-serif, bold;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .footer-direccion{
+    h3{
+      a{
+        color: #FFFFFF;
+        text-decoration: none;
+        list-style-type: none;
+      }
+    } 
+
+    .footer-direccion:hover{
+      animation: pulse 1s ease-in-out;
+    }
+  } 
+}
+.footer-redesSociales{
+    img{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      margin-right: 4px;
+      margin-left: 4px;
+    }
+  .footer-redesSociales a img:hover{
+    animation: pulse 1s ease-in-out;
+  }
+} 
