@@ -95,6 +95,27 @@
     }
   }
 }
+
+.newsletter{
+  .newsletter-titulo{
+    display: block;
+    text-align: center;
+    font-family: 'Rubik', sans-serif, bold;
+    font-size: 35px;
+  }
+  .newsletter-texto{
+    display: block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  .newsletter-form{
+    text-align: center;
+  }
+  .newsletter-btn{
+    font-size: 20px;
+  }
+}
 /*LIBROS*/
 
 .seccionesTienda{

@@ -1346,6 +1346,24 @@ html {
     margin-left: 98px;
     font-size: 20px; }
 
+.newsletter .newsletter-titulo {
+  display: block;
+  text-align: center;
+  font-family: 'Rubik', sans-serif, bold;
+  font-size: 35px; }
+
+.newsletter .newsletter-texto {
+  display: block;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white;
+  text-align: center; }
+
+.newsletter .newsletter-form {
+  text-align: center; }
+
+.newsletter .newsletter-btn {
+  font-size: 20px; }
+
 /*LIBROS*/
 .seccionesTienda {
   width: 100%; }
