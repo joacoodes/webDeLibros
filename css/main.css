@@ -1365,8 +1365,13 @@ html {
 .newsletter .newsletter-btn {
   font-size: 20px;
   text-align: center;
-  margin-right: 45%;
-  margin-left: 45%; }
+  margin-right: 49%;
+  margin-left: 49%;
+  background-color: #17a2b8;
+  color: #FFFFFF;
+  border-radius: 20px; }
+  .newsletter .newsletter-btn .newsletter-btn:hover {
+    animation: pulse 1s; }
 
 /*LIBROS*/
 .seccionesTienda {
