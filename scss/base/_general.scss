@@ -8,52 +8,82 @@ html{
 /*Footer*/
 
 .footer{
-  background-color: #17a2b8;
-  color: #FFFFFF;
+  height: 300px;
   width: 100%;
   margin-left: 0px;
-  padding-top: 10px;
-  position: absolute;
-  margin-bottom: 0;
-}
-
-.footer-list{
-  margin-top: 25px;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-
-  li{
-    font-family: 'Rubik', sans-serif, bold;
-    text-align: center;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
-  .footer-direccion{
-    h3{
-      a{
-        color: #FFFFFF;
-        text-decoration: none;
-        list-style-type: none;
+  position: relative;
+  margin-top: 0px;
+  bottom: 0;
+  .footer-list{
+    background-color: #17a2b8;
+    color: #FFFFFF;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  
+    li{
+      font-family: 'Rubik', sans-serif, bold;
+      text-align: center;
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    .footer-direccion{
+      h3{
+        a{
+          color: #FFFFFF;
+          text-decoration: none;
+          list-style-type: none;
+        }
+      } 
+  
+      .footer-direccion:hover{
+        animation: pulse 1s ease-in-out;
       }
     } 
-
-    .footer-direccion:hover{
+  }
+  .footer-redesSociales{
+      img{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin-right: 4px;
+        margin-left: 4px;
+      }
+    .footer-redesSociales a img:hover{
       animation: pulse 1s ease-in-out;
     }
   } 
-}
-.footer-redesSociales{
-    img{
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      margin-right: 4px;
-      margin-left: 4px;
-    }
-  .footer-redesSociales a img:hover{
-    animation: pulse 1s ease-in-out;
+  .footer-pie{ 
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #222;
+    padding-top: 25px;
+    padding-bottom: 10px;
   }
-} 
+}
+
+
+/*Botón ir arriba*/
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
