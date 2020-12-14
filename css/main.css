@@ -1355,7 +1355,6 @@ html {
 .newsletter .newsletter-texto {
   display: block;
   font-family: 'IBM Plex Sans', sans-serif;
-  color: white;
   text-align: center; }
 
 .newsletter .newsletter-form {
@@ -1365,7 +1364,9 @@ html {
 
 .newsletter .newsletter-btn {
   font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  margin-right: 45%;
+  margin-left: 45%; }
 
 /*LIBROS*/
 .seccionesTienda {
