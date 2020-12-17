@@ -183,10 +183,11 @@
 
       .navBar-list{
         .nav-item{
-          width: 50px;
+          padding-left: 60px;
+          padding-right: 60px;
           .nav-link{
             text-align: center;
-            font-size: 16px;
+            font-size: 15px;
           }
         }
       }
@@ -444,6 +445,7 @@
       text-align: center;
       margin-top: 40px;
       margin-right: auto;
+      margin-bottom: 200px;
       margin-left: auto;
       padding-top: 60px;
       font-size: 70px;
@@ -454,12 +456,12 @@
     }
 
     .categoriaLibros{
+      display: none;
       width: 50%;
       text-align: center;
-      display: inline-block;
       margin-bottom: 100px;
-      margin-left: 245px;
-      padding-left: 2px;
+      margin-left: 0px;
+      padding-left: 20px;
 
       a{
         .categoriaLibros-buttom{
@@ -474,16 +476,17 @@
 
   .seccionesTienda{
     .seccionesTienda-titulo{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 40px;
+      h2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
     }
 
     .seccionesTienda-list{
       .seccionesTienda-item{
-        margin-left: 5px;
-        margin-right: 15px;
         img{
           display: flex;
           flex-direction: row;
@@ -491,14 +494,13 @@
           width: 200px;
           height: 200px;
         }
-        .btn{
+        .button-libro{
           display: flex;
           flex-direction: row;
-          justify-content: space-around;
+          justify-content: center;
           margin-top: 20px;
-          margin-left: 55px;
-          margin-right: 50px;
-          font-size: 18px;
+          margin-right: 90px;
+          font-size: 16px;
           margin-bottom: 80px;
         }
       }

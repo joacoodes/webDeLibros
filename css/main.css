@@ -194,10 +194,11 @@ html {
       margin-left: auto;
       margin-right: auto; }
       .header-index .navBar-index .navBar-list .nav-item {
-        width: 50px; }
+        padding-left: 60px;
+        padding-right: 60px; }
         .header-index .navBar-index .navBar-list .nav-item .nav-link {
           text-align: center;
-          font-size: 16px; }
+          font-size: 15px; }
     .header-index .titulo-index {
       text-align: center;
       margin-left: auto;
@@ -358,46 +359,44 @@ html {
     text-align: center;
     margin-top: 40px;
     margin-right: auto;
+    margin-bottom: 200px;
     margin-left: auto;
     padding-top: 60px;
     font-size: 70px; }
   .header-libros .dropdown {
     display: none; }
   .header-libros .categoriaLibros {
+    display: none;
     width: 50%;
     text-align: center;
-    display: inline-block;
     margin-bottom: 100px;
-    margin-left: 245px;
-    padding-left: 2px; }
+    margin-left: 0px;
+    padding-left: 20px; }
     .header-libros .categoriaLibros a .categoriaLibros-buttom {
       display: inline-block;
       font-size: 15px;
       margin-top: 20px;
       margin-bottom: 20px; }
-  .seccionesTienda .seccionesTienda-titulo {
+  .seccionesTienda .seccionesTienda-titulo h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     font-size: 40px; }
-  .seccionesTienda .seccionesTienda-list .seccionesTienda-item {
-    margin-left: 5px;
-    margin-right: 15px; }
-    .seccionesTienda .seccionesTienda-list .seccionesTienda-item img {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 200px;
-      height: 200px; }
-    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .btn {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin-top: 20px;
-      margin-left: 55px;
-      margin-right: 50px;
-      font-size: 18px;
-      margin-bottom: 80px; } }
+  .seccionesTienda .seccionesTienda-list .seccionesTienda-item img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px; }
+  .seccionesTienda .seccionesTienda-list .seccionesTienda-item .button-libro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 90px;
+    font-size: 16px;
+    margin-bottom: 80px; } }
 
 /*GUIA DE COMPRA*/
 @media only screen and (max-width: 400px) {
