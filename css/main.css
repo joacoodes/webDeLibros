@@ -1091,8 +1091,6 @@ html {
       transition: color 0.5s;
       color: black;
       font-size: 100%; }
-    .header-index .navBar-index .navBar-list .nav-item .nav-item:hover {
-      color: #17a2b8; }
 
 .header-index .header-logo {
   display: block;
@@ -1108,27 +1106,22 @@ html {
   letter-spacing: 5px;
   font-size: 100px;
   padding-left: 30px;
-  text-align: center;
-  animation: zoomInDown 1.5s ease-in-out; }
+  text-align: center; }
 
-.header-index .button-tienda {
-  text-decoration: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 250px;
-  padding: 0px 30px 0px 30px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 40px;
-  animation: zoomInUp 1.5s ease-in-out; }
-
-.header-index .button-tienda:hover {
-  animation: pulse 1s;
-  border: 1px solid black;
-  background-color: white;
-  color: black; }
+.header-index a {
+  text-decoration: none; }
+  .header-index a .button-tienda {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 250px;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 40px; }
+  .header-index a button:hover {
+    animation: pulse 1s; }
 
 /*TIENDA*/
 .header-libros .header-logo {
@@ -1142,7 +1135,8 @@ html {
   width: 300px;
   text-align: center;
   transition: color 1.5s;
-  font-size: 100%; }
+  font-size: 100%;
+  font-weight: bold; }
   .header-libros .navBar-libros .navBar-list .nav-item a {
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -1182,6 +1176,8 @@ html {
       border: 1px solid black;
       background-color: white;
       color: black; }
+  .header-libros .categoriaLibros a button:hover {
+    animation: pulse 1s; }
 
 .header-libros .dropdown {
   display: none; }
@@ -1195,7 +1191,7 @@ html {
   height: 100px; }
 
 .header-guiadecompra .navBar-guiadecompra {
-  height: 80px;
+  height: 200px;
   width: 100%;
   background-color: white; }
   .header-guiadecompra .navBar-guiadecompra .navBar-list .nav-item {
@@ -1382,7 +1378,10 @@ html {
     font-size: 20px; }
 
 .newsletter {
-  margin-bottom: 60px; }
+  margin-top: 80px;
+  margin-bottom: 100px; }
+  .newsletter button:hover {
+    animation: pulse 1s; }
   .newsletter .newsletter-titulo {
     display: block;
     text-align: center;
@@ -1392,7 +1391,7 @@ html {
     display: block;
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
-    font-weight: 100;
+    font-weight: bold;
     font-size: 20px; }
   .newsletter .newsletter-form {
     text-align: center;
@@ -1411,8 +1410,6 @@ html {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 40px;
     padding: 5px 10px 5px 10px; }
-    .newsletter .newsletter-btn .newsletter-btn:hover {
-      animation: pulse 1s; }
 
 /*LIBROS*/
 .seccionesTienda {
@@ -1578,7 +1575,7 @@ html {
 
 /*SOBRE NOSOTROS*/
 .main-marca {
-  height: 1200px; }
+  height: 1300px; }
   .main-marca .imagenes {
     width: 30%;
     float: left;
@@ -1613,6 +1610,39 @@ html {
       font-family: 'Roboto Slab', serif; }
     .main-marca .historia .texto-3 p {
       font-family: 'IBM Plex Sans', sans-serif; }
+  .main-marca .newsletter-sobreNosotros {
+    display: block;
+    padding-top: 1000px; }
+    .main-marca .newsletter-sobreNosotros button:hover {
+      animation: pulse 1s; }
+    .main-marca .newsletter-sobreNosotros .newsletter-titulo {
+      display: block;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      font-size: 35px; }
+    .main-marca .newsletter-sobreNosotros .newsletter-texto {
+      display: block;
+      font-family: 'IBM Plex Sans', sans-serif;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px; }
+    .main-marca .newsletter-sobreNosotros .newsletter-form {
+      text-align: center;
+      margin-right: 35%;
+      margin-left: 35%; }
+    .main-marca .newsletter-sobreNosotros .newsletter-btn {
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      padding: 0px 3px 0px 3px;
+      text-align: center;
+      font-size: 15px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 40px;
+      padding: 5px 10px 5px 10px; }
 
 /*CONTACTO*/
 .main-contacto {
@@ -1623,9 +1653,12 @@ html {
     float: left;
     width: 40%;
     margin-left: 10%; }
+    .main-contacto .formulario-contacto button:hover {
+      animation: pulse 1s; }
     .main-contacto .formulario-contacto div p {
       font-family: 'IBM Plex Sans', sans-serif;
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      font-weight: bold; }
     .main-contacto .formulario-contacto div h3 {
       color: #17a2b8;
       font-family: 'Roboto Slab', serif; }
@@ -1646,4 +1679,5 @@ html {
     color: #17a2b8;
     font-family: 'Roboto Slab', serif; }
   .main-contacto .datos-contacto div p {
+    font-weight: bold;
     font-family: 'IBM Plex Sans', sans-serif; }
