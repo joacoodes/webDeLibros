@@ -20,7 +20,6 @@
     .titulo-index{
       text-align: center;
       margin-left: auto;
-      margin-right: 28px;
       padding-top: 0px;
       font-size: 40px;
     }
@@ -120,51 +119,73 @@
   }
 
   .footer{
-    background-color: #17a2b8;
-    color: #FFFFFF;
+    height: 300px;
     width: 100%;
-    margin-bottom: 0;
-
+    margin-left: 0px;
+    padding-left: 0px;
+    position: relative;
+    margin-top: 0px;
+    bottom: 0;
     .footer-list{
-      margin-top: 12.5px;
+      background-color: #17a2b8;
+      color: #FFFFFF;
       list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-
+      display: block;
+      margin-bottom: 0px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+    
       li{
+        font-size: 20px;
         font-family: 'Rubik', sans-serif, bold;
         text-align: center;
         color: white;
-        padding-top: 0px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 0px;
       }
-      .footer-copyright{
-        h3{
-          font-size: 8px;
-        }
-      }
+    
       .footer-direccion{
+        display: block;
         h3{
           a{
-            font-size: 8px;
+            font-size: 20px;
             color: #FFFFFF;
             text-decoration: none;
             list-style-type: none;
           }
+        } 
+    
+        .footer-direccion:hover{
+          animation: pulse 1s ease-in-out;
         }
-      }
-      .footer-redesSocialess{
-        a{
-          img{
-            display: inline-block;
-            width: 12.5px;
-            height: 12.5px;
-            margin-right: 2px;
-            margin-left: 2px;
-          }
+      } 
+    }
+    .footer-redesSociales{
+        img{
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          margin-right: 4px;
+          margin-left: 4px;
         }
+      .footer-redesSociales a img:hover{
+        animation: pulse 1s ease-in-out;
       }
+    } 
+    .footer-pie{ 
+      display: block;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      color: #FFFFFF;
+      background-color: #222;
+      padding-top: 25px;
+      padding-bottom: 10px;
     }
   }
 } 
@@ -172,22 +193,32 @@
 /*Tablet Styles*/ 
 @media only screen and (min-width: 401px) and (max-width: 960px){
   .header-index{
-    height: 700px;
-    .navBar-index{
-      padding-top: 20px;
-      height: 100px;
-      width: 100%;
+    .header-logo{
       display: block;
       margin-left: auto;
       margin-right: auto;
-
-      .navBar-list{
-        .nav-item{
-          padding-left: 60px;
-          padding-right: 60px;
-          .nav-link{
-            text-align: center;
-            font-size: 15px;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-index{
+      height: 100px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
           }
         }
       }
@@ -196,16 +227,16 @@
       text-align: center;
       margin-left: auto;
       margin-right: 28px;
-      padding-top: 10px;
-      font-size: 70px;
+      padding-top: 30px;
+      font-size: 60px;
     }
 
     .button-tienda{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 25px;
-    }
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 25px;
+      }
   }
 
   .nuevosIngresos{
@@ -422,6 +453,7 @@
 
 @media only screen and (min-width: 401px) and (max-width: 960px){
   .header-libros{
+    height: 800px;
       .navBar-libros{
         padding-top: 20px;
         height: 100px;
@@ -443,9 +475,9 @@
 
     .titulo-libros{
       text-align: center;
-      margin-top: 40px;
+      margin-top: 50px;
       margin-right: auto;
-      margin-bottom: 200px;
+      margin-bottom: 30px;
       margin-left: auto;
       padding-top: 60px;
       font-size: 70px;
@@ -456,8 +488,7 @@
     }
 
     .categoriaLibros{
-      display: none;
-      width: 50%;
+      width: 100%;
       text-align: center;
       margin-bottom: 100px;
       margin-left: 0px;
@@ -486,13 +517,8 @@
     }
 
     .seccionesTienda-list{
-      margin: 0px 0px 0px 0px;
-      padding: 0px 0px 0px 0px;
-      display: inline-block;
       .seccionesTienda-item{
         margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
-        display: block;
         img{
           width: 200px;
           height: 200px;
@@ -545,7 +571,7 @@
   }
 
   .main-guia{
-    height: 700px;
+    height: 2450px;
     .paso-1{
       display: block;
       text-align: center;
@@ -728,7 +754,7 @@
   }
 } 
 
-@media only screen and (min-width: 401px) and (max-width: 960px){
+@media screen and (min-width: 401px) and (max-width: 960px){
   .header-guiadecompra{
     .header-logo{
       display: block;
@@ -781,7 +807,7 @@
     .paso-1{
       text-align: center;
       float: left;
-      width: 45%;
+      width: 43%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
       margin-bottom: 30px;
       margin-left: 5%;
@@ -793,7 +819,7 @@
     
       h2{
         text-align: left;
-        padding-left: 25px;
+        padding-left: 35px;
         padding-top: 15px;
       }
     
@@ -895,7 +921,7 @@
       float: left;
       width: 43%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-      margin-bottom: 30px;
+      margin-bottom: 100px;
       margin-left: 5%;
       border-radius: 40px;
       height: 400px;
@@ -923,7 +949,7 @@
       float: left;
       width: 43%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-      margin-bottom: 30px;
+      margin-bottom: 100px;
       margin-left: 5%;
       border-radius: 40px;
       height: 400px;
@@ -979,7 +1005,7 @@
   }
 
   .main-marca{
-    height: 2000px;
+    height: 2200px;
   
     .imagenes{
       width: 80%;
@@ -1033,6 +1059,7 @@
         }
       }
       .texto-3{
+        margin-bottom: 50px;
         h2{
           font-family: 'Roboto Slab', serif;
           color: #17a2b8;
@@ -1050,26 +1077,34 @@
 
 @media only screen and (min-width: 401px) and (max-width: 960px){
   .header-marca{
-    height: 800px;
+    height: 600px;
     .header-logo{
-      img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
-        height: 100px;
-      }
-    }
-    .navBar-marca{
-      height: 300px;
-      width: 100%;
       display: block;
       margin-left: auto;
       margin-right: auto;
-
-      .navBar-list{
-        .nav-item{
-          width: 170px;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-marca{
+      height: 140px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
         }
       }
     }
@@ -1077,13 +1112,13 @@
       text-align: center;
       margin-left: auto;
       margin-right: 28px;
-      padding-top: 0px;
-      font-size: 90px;
+      padding-top: 30px;
+      font-size: 60px;
     }
   }
 
   .main-marca{
-    height: 2000px;
+    height: 2100px;
   
     .imagenes{
       display: none;
@@ -1138,6 +1173,7 @@
         }
       }
       .texto-3{
+        margin-bottom: 100px;
         h2{
           font-family: 'Roboto Slab', serif;
           color: #17a2b8;
@@ -1150,13 +1186,15 @@
         }
       }
     }
+
+
   }
 }
 
 /*CONTACTO*/
 @media only screen and (max-width: 400px){
   .header-contacto{
-    height: 400px;
+    height: 300px;
   
     .header-logo{
       display: block;
@@ -1269,8 +1307,7 @@
 
 @media only screen and (min-width: 401px) and (max-width: 960px){
   .header-contacto{
-    height: 450px;
-  
+    height: 300px;
     .header-logo{
       display: block;
       margin-left: auto;
@@ -1279,40 +1316,34 @@
       height: 100px;
     }
   
-      .navBar-contacto{
-        height: 80px;
-        width: 100%;
-        background-color: white;
-        .navBar-list{
-          .nav-item{
-            width: 180px;
-            text-align: center;
-            transition: color 1.5s;
-            font-size: 100%;
+    .navBar-contacto{
+      height: 140px;
+      width: 100%;
+      background-color: white;
   
-            a{
-            letter-spacing: 1px;
-            text-transform: capitalize;
-            transition: color 0.5s;
-            color: black;
-            font-size: 100%;
-          }
-          .nav-item:hover {
-            color: #17a2b8;
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
           }
         }
       }
     }
-    .titulo-contacto {
-      font-family: 'Roboto Slab', serif;
-      color: black;
-      letter-spacing: 5px;
-      font-size: 100px;
-      padding-left: 20px;
-      padding-top: 100px;
-      margin-bottom: 40px;
+    .titulo-contacto{
       text-align: center;
-      animation: zoomInDown 1.5s ease-in-out ;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
     }
   }
   
