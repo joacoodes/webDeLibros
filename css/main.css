@@ -383,20 +383,22 @@ html {
     margin-right: auto;
     margin-bottom: 50px;
     font-size: 40px; }
-  .seccionesTienda .seccionesTienda-list .seccionesTienda-item img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 200px;
-    height: 200px; }
-  .seccionesTienda .seccionesTienda-list .seccionesTienda-item .button-libro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-    margin-right: 90px;
-    font-size: 16px;
-    margin-bottom: 80px; } }
+  .seccionesTienda .seccionesTienda-list {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: inline-block; }
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item {
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 0px 0px;
+      display: block; }
+      .seccionesTienda .seccionesTienda-list .seccionesTienda-item img {
+        width: 200px;
+        height: 200px; }
+      .seccionesTienda .seccionesTienda-list .seccionesTienda-item .button-libro {
+        margin-top: 20px;
+        margin-right: 90px;
+        font-size: 16px;
+        margin-bottom: 80px; } }
 
 /*GUIA DE COMPRA*/
 @media only screen and (max-width: 400px) {
@@ -571,37 +573,7 @@ html {
         padding-top: 15px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 15px; }
-  .footer {
-    background-color: #17a2b8;
-    color: #FFFFFF;
-    width: 100%;
-    margin-bottom: 0; }
-    .footer .footer-list {
-      margin-top: 12.5px;
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      align-items: baseline; }
-      .footer .footer-list li {
-        font-family: 'Rubik', sans-serif, bold;
-        text-align: center;
-        color: white;
-        padding-top: 0px;
-        padding-bottom: 15px; }
-      .footer .footer-list .footer-copyright h3 {
-        font-size: 8px; }
-      .footer .footer-list .footer-direccion h3 a {
-        font-size: 8px;
-        color: #FFFFFF;
-        text-decoration: none;
-        list-style-type: none; }
-      .footer .footer-list .footer-redesSocialess a img {
-        display: inline-block;
-        width: 12.5px;
-        height: 12.5px;
-        margin-right: 2px;
-        margin-left: 2px; } }
+        font-size: 15px; } }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .header-guiadecompra .header-logo {
@@ -640,7 +612,7 @@ html {
   .main-guia .paso-1 {
     text-align: center;
     float: left;
-    width: 43%;
+    width: 45%;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     margin-bottom: 30px;
     margin-left: 5%;
@@ -651,7 +623,7 @@ html {
     padding: 55px 40px 40px 30px; }
     .main-guia .paso-1 h2 {
       text-align: left;
-      padding-left: 35px;
+      padding-left: 25px;
       padding-top: 15px; }
     .main-guia .paso-1 p {
       text-align: left;
@@ -1135,8 +1107,7 @@ html {
   width: 300px;
   text-align: center;
   transition: color 1.5s;
-  font-size: 100%;
-  font-weight: bold; }
+  font-size: 100%; }
   .header-libros .navBar-libros .navBar-list .nav-item a {
     letter-spacing: 1px;
     text-transform: capitalize;
