@@ -4,8 +4,7 @@
 html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #f8f9fa; }
+  box-sizing: border-box; }
 
 /*Footer*/
 .footer {
@@ -732,6 +731,7 @@ html {
     margin-left: auto;
     margin-right: auto; }
   .header-index .titulo-index {
+    margin-left: 0px;
     text-align: center;
     margin-left: auto;
     padding-top: 0px;
