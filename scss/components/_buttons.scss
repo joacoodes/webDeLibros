@@ -16,6 +16,7 @@
 }
 
 .whatsapp-button:hover {
+  animation: pulse 1s;
   outline: none;
   text-decoration: none;
 }
@@ -29,4 +30,8 @@
   color: #fff;
   background: url("/image/top.png");
   background-size: cover;
+}
+
+#scrollUp:hover{
+  animation: pulse 1s;
 }
