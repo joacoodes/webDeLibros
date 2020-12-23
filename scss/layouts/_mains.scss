@@ -16,33 +16,29 @@
 
 .nuevosIngresos-list{
   li{
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
     padding: 0px 40px 15px 40px;
-    margin: 5px 10px 0px 60px;
+    margin: 0px 10px 0px 50px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    margin-bottom: 100px;
+    @include contratapa;
 
-    .btn{
-      font-family: 'Roboto Slab', serif;
+    .button-libro{
       display: flex;
-      flex-direction: row;
       margin-top: 20px;
       margin-left: 98px;
       margin-left: 98px;
-      font-size: 20px;
+      font-size: 50px;
       border-radius: 30px;
       transition: all 0.5s ease;
     }
 
-    .btn:hover{
+    .button-libro:hover{
       background-color: #FFFFFF;
       color: $colorblue;
       border-color: $colorblue;
-    }
-
-    img:hover{
-      animation: pulse 1s;
     }
   }
 }
@@ -94,31 +90,10 @@
     list-style-type: none;
     display: inline-block;
     padding: 0px 40px 15px 40px;
-    margin: 0px 10px 0px 60px;
+    margin: 0px 10px 0px 50px;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     margin-bottom: 100px;
-
-    .btn{
-      font-family: 'Roboto Slab', serif;
-      display: flex;
-      flex-direction: row;
-      margin-top: 20px;
-      margin-left: 98px;
-      margin-left: 98px;
-      font-size: 20px;
-      border-radius: 30px;
-      transition: all 0.5s ease;
-    }
-
-    .btn:hover{
-      background-color: #FFFFFF;
-      color: $colorblue;
-      border-color: $colorblue;
-    }
-
-    img:hover{
-      animation: pulse 1s;
-    }
+    @include contratapa;
   }
 }
 
@@ -190,6 +165,7 @@
       display: inline-block;
       padding: 0px 40px 15px 40px;
       margin: 5px 10px 30px 0px;
+      @include contratapa;
 
       .btn{
         display: flex;

@@ -118,7 +118,10 @@ html {
       text-transform: capitalize;
       transition: color 0.5s;
       color: black;
-      font-size: 100%; }
+      font-size: 100%;
+      transition: all 0.5s ease; }
+    .header-index .navBar-index .navBar-list .nav-item a:hover {
+      color: #17a2b8; }
 
 .header-index .header-logo {
   display: block;
@@ -170,7 +173,7 @@ html {
     transition: color 0.5s;
     color: black;
     font-size: 100%; }
-  .header-libros .navBar-libros .navBar-list .nav-item .nav-item:hover {
+  .header-libros .navBar-libros .navBar-list .nav-item a:hover {
     color: #17a2b8; }
 
 .header-libros .titulo-libros {
@@ -231,7 +234,7 @@ html {
       transition: color 0.5s;
       color: black;
       font-size: 100%; }
-    .header-guiadecompra .navBar-guiadecompra .navBar-list .nav-item .nav-item:hover {
+    .header-guiadecompra .navBar-guiadecompra .navBar-list .nav-item a:hover {
       color: #17a2b8; }
 
 .header-guiadecompra .titulo-guiadecompra {
@@ -278,7 +281,7 @@ html {
         transition: color 0.5s;
         color: black;
         font-size: 100%; }
-      .header-marca .navBar-marca .navBar-list .nav-item .nav-item:hover {
+      .header-marca .navBar-marca .navBar-list .nav-item a:hover {
         color: #17a2b8; }
   .header-marca .titulo-marca {
     font-family: 'Roboto Slab', serif;
@@ -315,7 +318,7 @@ html {
         transition: color 0.5s;
         color: black;
         font-size: 100%; }
-      .header-contacto .navBar-contacto .navBar-list .nav-item .nav-item:hover {
+      .header-contacto .navBar-contacto .navBar-list .nav-item a:hover {
         color: #17a2b8; }
   .header-contacto .titulo-contacto {
     font-family: 'Roboto Slab', serif;
@@ -342,28 +345,64 @@ html {
   padding-bottom: 15px; }
 
 .nuevosIngresos-list li {
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
   padding: 0px 40px 15px 40px;
-  margin: 5px 10px 0px 60px; }
-  .nuevosIngresos-list li .btn {
-    font-family: 'Roboto Slab', serif;
+  margin: 0px 10px 0px 50px;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  margin-bottom: 100px; }
+  .nuevosIngresos-list li .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; }
+  .nuevosIngresos-list li .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .nuevosIngresos-list li .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); }
+  .nuevosIngresos-list li .flip-card-front, .nuevosIngresos-list li .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .nuevosIngresos-list li .flip-card-front {
+    background-color: white;
+    color: black; }
+  .nuevosIngresos-list li .flip-card-back {
+    padding-top: 35px;
+    padding-bottom: 5px;
+    background-color: #17a2b8;
+    color: white;
+    transform: rotateY(180deg); }
+    .nuevosIngresos-list li .flip-card-back h4 {
+      font-family: 'Roboto Slab', serif;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 15px;
+      font-size: 25px; }
+    .nuevosIngresos-list li .flip-card-back p {
+      font-size: 20px;
+      font-family: 'IBM Plex Sans', sans-serif; }
+  .nuevosIngresos-list li .button-libro {
     display: flex;
-    flex-direction: row;
     margin-top: 20px;
     margin-left: 98px;
     margin-left: 98px;
-    font-size: 20px;
+    font-size: 50px;
     border-radius: 30px;
     transition: all 0.5s ease; }
-  .nuevosIngresos-list li .btn:hover {
+  .nuevosIngresos-list li .button-libro:hover {
     background-color: #FFFFFF;
     color: #17a2b8;
     border-color: #17a2b8; }
-  .nuevosIngresos-list li img:hover {
-    animation: pulse 1s; }
 
 .columns-list {
   background-color: #17a2b8;
@@ -401,25 +440,48 @@ html {
   list-style-type: none;
   display: inline-block;
   padding: 0px 40px 15px 40px;
-  margin: 0px 10px 0px 60px;
+  margin: 0px 10px 0px 50px;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   margin-bottom: 100px; }
-  .topVentas-list li .btn {
-    font-family: 'Roboto Slab', serif;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    margin-left: 98px;
-    margin-left: 98px;
-    font-size: 20px;
-    border-radius: 30px;
-    transition: all 0.5s ease; }
-  .topVentas-list li .btn:hover {
-    background-color: #FFFFFF;
-    color: #17a2b8;
-    border-color: #17a2b8; }
-  .topVentas-list li img:hover {
-    animation: pulse 1s; }
+  .topVentas-list li .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; }
+  .topVentas-list li .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .topVentas-list li .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); }
+  .topVentas-list li .flip-card-front, .topVentas-list li .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .topVentas-list li .flip-card-front {
+    background-color: white;
+    color: black; }
+  .topVentas-list li .flip-card-back {
+    padding-top: 35px;
+    padding-bottom: 5px;
+    background-color: #17a2b8;
+    color: white;
+    transform: rotateY(180deg); }
+    .topVentas-list li .flip-card-back h4 {
+      font-family: 'Roboto Slab', serif;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 15px;
+      font-size: 25px; }
+    .topVentas-list li .flip-card-back p {
+      font-size: 20px;
+      font-family: 'IBM Plex Sans', sans-serif; }
 
 .newsletter {
   margin-top: 80px;
@@ -477,6 +539,45 @@ html {
     display: inline-block;
     padding: 0px 40px 15px 40px;
     margin: 5px 10px 30px 0px; }
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px; }
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg); }
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-front, .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-front {
+      background-color: white;
+      color: black; }
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-back {
+      padding-top: 35px;
+      padding-bottom: 5px;
+      background-color: #17a2b8;
+      color: white;
+      transform: rotateY(180deg); }
+      .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-back h4 {
+        font-family: 'Roboto Slab', serif;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 15px;
+        font-size: 25px; }
+      .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-back p {
+        font-size: 20px;
+        font-family: 'IBM Plex Sans', sans-serif; }
     .seccionesTienda .seccionesTienda-list .seccionesTienda-item .btn {
       display: flex;
       flex-direction: row;
