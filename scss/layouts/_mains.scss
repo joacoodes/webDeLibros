@@ -20,26 +20,13 @@
     list-style-type: none;
     display: inline-block;
     padding: 0px 40px 15px 40px;
-    margin: 0px 30px 0px 50px;
+    margin: 0px 30px 0px 40px;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     margin-bottom: 100px;
+
     @include contratapa;
 
-    .button-libro{
-      display: flex;
-      margin-top: 20px;
-      margin-left: 98px;
-      margin-left: 98px;
-      font-size: 50px;
-      border-radius: 30px;
-      transition: all 0.5s ease;
-    }
-
-    .button-libro:hover{
-      background-color: #FFFFFF;
-      color: $colorblue;
-      border-color: $colorblue;
-    }
+    @include button-compra;
   }
 }
 
@@ -90,26 +77,13 @@
     list-style-type: none;
     display: inline-block;
     padding: 0px 40px 15px 40px;
-    margin: 0px 30px 0px 50px;
+    margin: 0px 30px 0px 40px;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     margin-bottom: 100px;
+
     @include contratapa;
 
-    .button-libro{
-      display: flex;
-      margin-top: 20px;
-      margin-left: 98px;
-      margin-left: 98px;
-      font-size: 50px;
-      border-radius: 30px;
-      transition: all 0.5s ease;
-    }
-
-    .button-libro:hover{
-      background-color: #FFFFFF;
-      color: $colorblue;
-      border-color: $colorblue;
-    }
+    @include button-compra;
   }
 }
 
@@ -163,46 +137,28 @@
 
 .seccionesTienda{
   width: 100%;
-
+  margin-bottom: 200px;
   .seccionesTienda-titulo{
     font-family: 'Roboto Slab', serif;
     letter-spacing: 2px;
     color: black;
     text-align: center;
-    font-size: 10px;
-    padding-top: 20px;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 35px;
   }
-  
   .seccionesTienda-list{
     .seccionesTienda-item{
-      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-      text-decoration: none;
-      list-style-type: none;
-      display: inline-block;
-      padding: 0px 40px 15px 40px;
-      margin: 5px 10px 30px 0px;
-      @include contratapa;
-
-      .btn{
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
-        margin-left: 98px;
-        margin-left: 98px;
-        font-size: 20px;
-        border-radius: 30px;
-        transition: all 0.5s ease;
-      }
-  
-      .btn:hover{
-        background-color: #FFFFFF;
-        color: $colorblue;
-        border-color: $colorblue;
-      }
-
-      img:hover{
-        animation: pulse 1s;
-      }
+        text-decoration: none;
+        list-style-type: none;
+        display: inline-block;
+        padding: 0px 40px 15px 40px;
+        margin: 0px 30px 0px 40px;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    
+        @include contratapa;
+    
+        @include button-compra;
     }
   }
 }
@@ -224,7 +180,7 @@
     height: 400px;
     background-color: $colorblue;
     color: white;
-    padding: 70px 70px 70px 20px;
+    padding: 40px 70px 70px 20px;
   
     h2{
       font-family: 'Roboto Slab', serif;
@@ -241,6 +197,13 @@
       padding-left: 150px;
       margin-bottom: 150px;
     }
+
+    a{
+      font-family: 'Roboto Slab', serif;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
   }
   
   .paso-2{
@@ -254,7 +217,7 @@
     height: 400px;
     background-color: white;
     color: $colorblue;
-    padding: 70px 70px 70px 20px;
+    padding: 40px 70px 70px 20px;
   
     h2{
       font-family: 'Roboto Slab', serif;
@@ -283,7 +246,7 @@
     height: 400px;
     background-color: black;
     color: white;
-    padding: 70px 70px 70px 20px;
+    padding: 40px 70px 70px 20px;
   
     h2{
       font-family: 'Roboto Slab', serif;
@@ -312,7 +275,7 @@
     height: 400px;
     background-color: $colorblue;
     color: white;
-    padding: 70px 70px 70px 20px;
+    padding: 40px 70px 70px 20px;
   
     h2{
       font-family: 'Roboto Slab', serif;
@@ -341,7 +304,7 @@
     height: 400px;
     background-color: white;
     color:$colorblue;
-    padding: 70px 70px 70px 20px;
+    padding: 40px 70px 70px 20px;
   
     h2{
       font-family: 'Roboto Slab', serif;
@@ -370,7 +333,7 @@
     height: 400px;
     background-color: black;
     color: white;
-    padding: 70px 70px 70px 20px;
+    padding: 40px 70px 70px 20px;
   
     h2{
       font-family: 'Roboto Slab', serif;

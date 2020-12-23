@@ -61,3 +61,21 @@
     transform: rotateY(180deg);
   }
 }
+
+@mixin button-compra {
+  .button-libro{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 98px;
+    margin-left: 98px;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+  }
+
+  .button-libro:hover{
+    background-color: #FFFFFF;
+    color: $colorblue;
+    border-color: $colorblue;
+  }
+}

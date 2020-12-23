@@ -349,7 +349,7 @@ html {
   list-style-type: none;
   display: inline-block;
   padding: 0px 40px 15px 40px;
-  margin: 0px 30px 0px 50px;
+  margin: 0px 30px 0px 40px;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   margin-bottom: 100px; }
   .nuevosIngresos-list li .flip-card {
@@ -396,7 +396,7 @@ html {
     margin-top: 20px;
     margin-left: 98px;
     margin-left: 98px;
-    font-size: 50px;
+    font-size: 20px;
     border-radius: 30px;
     transition: all 0.5s ease; }
   .nuevosIngresos-list li .button-libro:hover {
@@ -440,7 +440,7 @@ html {
   list-style-type: none;
   display: inline-block;
   padding: 0px 40px 15px 40px;
-  margin: 0px 30px 0px 50px;
+  margin: 0px 30px 0px 40px;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   margin-bottom: 100px; }
   .topVentas-list li .flip-card {
@@ -487,7 +487,7 @@ html {
     margin-top: 20px;
     margin-left: 98px;
     margin-left: 98px;
-    font-size: 50px;
+    font-size: 20px;
     border-radius: 30px;
     transition: all 0.5s ease; }
   .topVentas-list li .button-libro:hover {
@@ -536,21 +536,23 @@ html {
 
 /*LIBROS*/
 .seccionesTienda {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 200px; }
   .seccionesTienda .seccionesTienda-titulo {
     font-family: 'Roboto Slab', serif;
     letter-spacing: 2px;
     color: black;
     text-align: center;
-    font-size: 10px;
-    padding-top: 20px; }
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 35px; }
   .seccionesTienda .seccionesTienda-list .seccionesTienda-item {
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
     padding: 0px 40px 15px 40px;
-    margin: 5px 10px 30px 0px; }
+    margin: 0px 30px 0px 40px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); }
     .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card {
       background-color: transparent;
       width: 300px;
@@ -590,21 +592,18 @@ html {
       .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-back p {
         font-size: 20px;
         font-family: 'IBM Plex Sans', sans-serif; }
-    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .btn {
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .button-libro {
       display: flex;
-      flex-direction: row;
       margin-top: 20px;
       margin-left: 98px;
       margin-left: 98px;
       font-size: 20px;
       border-radius: 30px;
       transition: all 0.5s ease; }
-    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .btn:hover {
+    .seccionesTienda .seccionesTienda-list .seccionesTienda-item .button-libro:hover {
       background-color: #FFFFFF;
       color: #17a2b8;
       border-color: #17a2b8; }
-    .seccionesTienda .seccionesTienda-list .seccionesTienda-item img:hover {
-      animation: pulse 1s; }
 
 /*GUIA DE COMPRA*/
 .main-guia {
@@ -621,7 +620,7 @@ html {
     height: 400px;
     background-color: #17a2b8;
     color: white;
-    padding: 70px 70px 70px 20px; }
+    padding: 40px 70px 70px 20px; }
     .main-guia .paso-1 h2 {
       font-family: 'Roboto Slab', serif;
       text-align: left;
@@ -634,6 +633,11 @@ html {
       padding-right: 150px;
       padding-left: 150px;
       margin-bottom: 150px; }
+    .main-guia .paso-1 a {
+      font-family: 'Roboto Slab', serif;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-transform: uppercase; }
   .main-guia .paso-2 {
     text-align: center;
     float: left;
@@ -645,7 +649,7 @@ html {
     height: 400px;
     background-color: white;
     color: #17a2b8;
-    padding: 70px 70px 70px 20px; }
+    padding: 40px 70px 70px 20px; }
     .main-guia .paso-2 h2 {
       font-family: 'Roboto Slab', serif;
       text-align: left;
@@ -668,7 +672,7 @@ html {
     height: 400px;
     background-color: black;
     color: white;
-    padding: 70px 70px 70px 20px; }
+    padding: 40px 70px 70px 20px; }
     .main-guia .paso-3 h2 {
       font-family: 'Roboto Slab', serif;
       text-align: left;
@@ -691,7 +695,7 @@ html {
     height: 400px;
     background-color: #17a2b8;
     color: white;
-    padding: 70px 70px 70px 20px; }
+    padding: 40px 70px 70px 20px; }
     .main-guia .paso-4 h2 {
       font-family: 'Roboto Slab', serif;
       text-align: left;
@@ -714,7 +718,7 @@ html {
     height: 400px;
     background-color: white;
     color: #17a2b8;
-    padding: 70px 70px 70px 20px; }
+    padding: 40px 70px 70px 20px; }
     .main-guia .paso-5 h2 {
       font-family: 'Roboto Slab', serif;
       text-align: left;
@@ -737,7 +741,7 @@ html {
     height: 400px;
     background-color: black;
     color: white;
-    padding: 70px 70px 70px 20px; }
+    padding: 40px 70px 70px 20px; }
     .main-guia .paso-6 h2 {
       font-family: 'Roboto Slab', serif;
       text-align: left;
