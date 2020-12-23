@@ -349,7 +349,7 @@ html {
   list-style-type: none;
   display: inline-block;
   padding: 0px 40px 15px 40px;
-  margin: 0px 10px 0px 50px;
+  margin: 0px 30px 0px 50px;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   margin-bottom: 100px; }
   .nuevosIngresos-list li .flip-card {
@@ -440,7 +440,7 @@ html {
   list-style-type: none;
   display: inline-block;
   padding: 0px 40px 15px 40px;
-  margin: 0px 10px 0px 50px;
+  margin: 0px 30px 0px 50px;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   margin-bottom: 100px; }
   .topVentas-list li .flip-card {
@@ -482,6 +482,18 @@ html {
     .topVentas-list li .flip-card-back p {
       font-size: 20px;
       font-family: 'IBM Plex Sans', sans-serif; }
+  .topVentas-list li .button-libro {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 98px;
+    margin-left: 98px;
+    font-size: 50px;
+    border-radius: 30px;
+    transition: all 0.5s ease; }
+  .topVentas-list li .button-libro:hover {
+    background-color: #FFFFFF;
+    color: #17a2b8;
+    border-color: #17a2b8; }
 
 .newsletter {
   margin-top: 80px;
