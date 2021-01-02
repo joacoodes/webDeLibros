@@ -56,8 +56,8 @@
     }
     padding-top: 35px;
     padding-bottom: 5px;
-    background-color: $colorblue;
-    color: white;
+    background-color: white;
+    color: $colorblue;
     transform: rotateY(180deg);
   }
 }
@@ -71,6 +71,9 @@
     font-size: 20px;
     border-radius: 30px;
     transition: all 0.5s ease;
+    border-color: $colorblue;
+    background-color: $colorblue;
+    color: white;
   }
 
   .button-libro:hover{

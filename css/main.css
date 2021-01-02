@@ -153,7 +153,10 @@ html {
     text-align: center;
     font-size: 30px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 40px; }
+    border-radius: 40px;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white; }
   .header-index a button:hover {
     animation: pulse 1s; }
 
@@ -344,8 +347,8 @@ html {
   color: black;
   text-align: center;
   font-size: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  margin-top: 15px;
+  margin-bottom: 35px; }
 
 .nuevosIngresos-list li {
   text-decoration: none;
@@ -382,8 +385,8 @@ html {
   .nuevosIngresos-list li .flip-card-back {
     padding-top: 35px;
     padding-bottom: 5px;
-    background-color: #17a2b8;
-    color: white;
+    background-color: white;
+    color: #17a2b8;
     transform: rotateY(180deg); }
     .nuevosIngresos-list li .flip-card-back h4 {
       font-family: 'Roboto Slab', serif;
@@ -401,7 +404,10 @@ html {
     margin-left: 98px;
     font-size: 20px;
     border-radius: 30px;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    border-color: #17a2b8;
+    background-color: #17a2b8;
+    color: white; }
   .nuevosIngresos-list li .button-libro:hover {
     background-color: #FFFFFF;
     color: #17a2b8;
@@ -423,20 +429,21 @@ html {
     padding-right: 100px;
     padding-left: 150px; }
     .columns-list .columns-item img {
-      width: 80px;
+      width: 75px;
       height: 80px;
       padding-bottom: 10px; }
     .columns-list .columns-item h3 {
-      font-family: 'Rubik', sans-serif; }
+      font-family: 'Roboto Slab', serif;
+      font-size: 25px; }
 
 .topVentas-titulo {
-  margin-bottom: 20px;
   font-family: 'Roboto Slab', serif;
   letter-spacing: 2px;
+  color: black;
   text-align: center;
   font-size: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  margin-top: 15px;
+  margin-bottom: 35px; }
 
 .topVentas-list li {
   text-decoration: none;
@@ -473,8 +480,8 @@ html {
   .topVentas-list li .flip-card-back {
     padding-top: 35px;
     padding-bottom: 5px;
-    background-color: #17a2b8;
-    color: white;
+    background-color: white;
+    color: #17a2b8;
     transform: rotateY(180deg); }
     .topVentas-list li .flip-card-back h4 {
       font-family: 'Roboto Slab', serif;
@@ -492,7 +499,10 @@ html {
     margin-left: 98px;
     font-size: 20px;
     border-radius: 30px;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    border-color: #17a2b8;
+    background-color: #17a2b8;
+    color: white; }
   .topVentas-list li .button-libro:hover {
     background-color: #FFFFFF;
     color: #17a2b8;
@@ -531,7 +541,10 @@ html {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 30px;
     padding: 5px 10px 5px 10px;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    background-color: #17a2b8;
+    color: white;
+    border: #17a2b8; }
   .newsletter .newsletter-btn:hover {
     background-color: #FFFFFF;
     color: #17a2b8;
@@ -583,8 +596,8 @@ html {
     .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-back {
       padding-top: 35px;
       padding-bottom: 5px;
-      background-color: #17a2b8;
-      color: white;
+      background-color: white;
+      color: #17a2b8;
       transform: rotateY(180deg); }
       .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-back h4 {
         font-family: 'Roboto Slab', serif;
@@ -602,7 +615,10 @@ html {
       margin-left: 98px;
       font-size: 20px;
       border-radius: 30px;
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      border-color: #17a2b8;
+      background-color: #17a2b8;
+      color: white; }
     .seccionesTienda .seccionesTienda-list .seccionesTienda-item .button-libro:hover {
       background-color: #FFFFFF;
       color: #17a2b8;
@@ -865,6 +881,17 @@ html {
   .main-contacto .datos-contacto div p {
     font-weight: bold;
     font-family: 'IBM Plex Sans', sans-serif; }
+
+/*BUTTONS MODAL*/
+.button-libro {
+  background-color: #17a2b8;
+  color: white;
+  border-color: #17a2b8; }
+
+.button-libro:hover {
+  background-color: white;
+  color: #17a2b8;
+  border-color: #17a2b8; }
 
 /*PRINCIPAL*/
 @media only screen and (max-width: 400px) {

@@ -10,8 +10,8 @@
   color: black;
   text-align: center;
   font-size: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 35px;
 }
 
 .nuevosIngresos-list{
@@ -49,26 +49,27 @@
     padding-left: 150px;
   
     img{
-      width: 80px;
+      width: 75px;
       height: 80px;
       padding-bottom: 10px;
     }
     
     h3{
-      font-family: 'Rubik', sans-serif;
+      font-family: 'Roboto Slab', serif;
+      font-size: 25px;
     }
   }
 }
 
 
 .topVentas-titulo{
-  margin-bottom: 20px;
   font-family: 'Roboto Slab', serif;
   letter-spacing: 2px;
+  color: black;
   text-align: center;
   font-size: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 35px;
 }
 
 .topVentas-list{
@@ -125,6 +126,9 @@
     border-radius: 30px;
     padding: 5px 10px 5px 10px;
     transition: all 0.5s ease;
+    background-color: $colorblue;
+    color: white;
+    border: $colorblue;
   }
 
   .newsletter-btn:hover{
@@ -516,4 +520,19 @@
     font-weight: bold;
     font-family: 'IBM Plex Sans', sans-serif;
   }
+}
+
+
+/*BUTTONS MODAL*/
+
+.button-libro{
+  background-color: $colorblue;
+  color: white;
+  border-color: $colorblue;
+}
+
+.button-libro:hover{
+  background-color: white;
+  color: $colorblue;
+  border-color: $colorblue;
 }
