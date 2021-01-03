@@ -27,10 +27,25 @@ html{
   
     li{
       font-family: 'Roboto Slab', serif;
-      text-align: center;
+      text-align: left;
+      text-decoration: none;
       color: white;
       padding-top: 20px;
       padding-bottom: 20px;
+
+      h3{
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+
+      p{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 20px;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
     }
   
     .footer-direccion{

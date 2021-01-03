@@ -26,10 +26,20 @@ html {
     padding-bottom: 20px; }
     .footer .footer-list li {
       font-family: 'Roboto Slab', serif;
-      text-align: center;
+      text-align: left;
+      text-decoration: none;
       color: white;
       padding-top: 20px;
       padding-bottom: 20px; }
+      .footer .footer-list li h3 {
+        font-size: 30px;
+        padding-bottom: 10px; }
+      .footer .footer-list li p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 20px; }
+        .footer .footer-list li p a {
+          text-decoration: none;
+          color: white; }
     .footer .footer-list .footer-direccion iframe {
       width: 400px;
       height: 400px; }
@@ -387,7 +397,8 @@ html {
     padding-bottom: 5px;
     background-color: white;
     color: #17a2b8;
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    margin: 0px; }
     .nuevosIngresos-list li .flip-card-back h4 {
       font-family: 'Roboto Slab', serif;
       padding-left: 30px;
@@ -416,9 +427,9 @@ html {
 .columns-list {
   background-color: #17a2b8;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 40px;
+  border-radius: 100px;
   padding: 10px 0px 10px 0px;
-  margin: 100px 30px 100px 30px; }
+  margin: 100px 30px 200px 30px; }
   .columns-list .columns-item {
     font-family: 'IBM Plex Sans', sans-serif;
     display: inline-block;
@@ -482,7 +493,8 @@ html {
     padding-bottom: 5px;
     background-color: white;
     color: #17a2b8;
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    margin: 0px; }
     .topVentas-list li .flip-card-back h4 {
       font-family: 'Roboto Slab', serif;
       padding-left: 30px;
@@ -598,7 +610,8 @@ html {
       padding-bottom: 5px;
       background-color: white;
       color: #17a2b8;
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      margin: 0px; }
       .seccionesTienda .seccionesTienda-list .seccionesTienda-item .flip-card-back h4 {
         font-family: 'Roboto Slab', serif;
         padding-left: 30px;
@@ -1069,18 +1082,18 @@ html {
     margin-left: auto;
     margin-right: auto;
     font-size: 40px; }
-  .nuevosIngresos .nuevosIngresos-list li img {
-    margin-left: 40px;
-    width: 200px;
-    height: 200px; }
-  .nuevosIngresos .nuevosIngresos-list li .btn {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 90px;
-    margin-right: 50px;
-    font-size: 18px;
+  .nuevosIngresos .nuevosIngresos-list li {
     margin-bottom: 80px; }
+    .nuevosIngresos .nuevosIngresos-list li img {
+      width: 200px;
+      height: 200px; }
+    .nuevosIngresos .nuevosIngresos-list li .btn {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 90px;
+      margin-right: 50px;
+      font-size: 18px; }
   .columns .columns-list {
     display: inline-block;
     flex-direction: column;
@@ -1088,7 +1101,7 @@ html {
     margin-top: 10px;
     margin-right: 50px;
     margin-left: 75px;
-    margin-bottom: 60px; }
+    margin-bottom: 100px; }
     .columns .columns-list .columns-item {
       font-family: 'IBM Plex Sans', sans-serif;
       display: inline-block;
@@ -1107,7 +1120,6 @@ html {
     margin-right: auto;
     font-size: 40px; }
   .topVentas .topVentas-list li img {
-    margin-left: 40px;
     width: 200px;
     height: 200px; }
   .topVentas .topVentas-list li .btn {
@@ -1239,7 +1251,7 @@ html {
     margin-bottom: 50px;
     font-size: 40px; }
   .seccionesTienda .seccionesTienda-list .seccionesTienda-item {
-    margin: 0px 0px 0px 0px; }
+    margin: 0px 0px 0px 40px; }
     .seccionesTienda .seccionesTienda-list .seccionesTienda-item img {
       width: 200px;
       height: 200px; }
