@@ -10,19 +10,21 @@
         width: 300px;
         text-align: center;
         transition: color 1.5s;
-        font-size: 100%;
+        font-size: 110%;
 
-        a{
-          letter-spacing: 1px;
-          text-transform: capitalize;
-          transition: color 0.5s;
+        a {
           color: black;
-          font-size: 100%;
-          transition: all 0.5s ease;
-        }
-        a:hover{
-          color: $colorblue;
-        }
+          text-decoration: none;
+          background-image: linear-gradient($colorblue, $colorblue);
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          transition: background-size .5s;
+      }
+      
+      a:hover, a:focus {
+          background-size: 100% 2px;
+      }
       }
     }
   }

@@ -125,16 +125,17 @@ html {
     width: 300px;
     text-align: center;
     transition: color 1.5s;
-    font-size: 100%; }
+    font-size: 110%; }
     .header-index .navBar-index .navBar-list .nav-item a {
-      letter-spacing: 1px;
-      text-transform: capitalize;
-      transition: color 0.5s;
       color: black;
-      font-size: 100%;
-      transition: all 0.5s ease; }
-    .header-index .navBar-index .navBar-list .nav-item a:hover {
-      color: #17a2b8; }
+      text-decoration: none;
+      background-image: linear-gradient(#17a2b8, #17a2b8);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .5s; }
+    .header-index .navBar-index .navBar-list .nav-item a:hover, .header-index .navBar-index .navBar-list .nav-item a:focus {
+      background-size: 100% 2px; }
 
 .header-index .header-logo {
   display: block;
