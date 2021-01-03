@@ -909,53 +909,58 @@ html {
 
 /*PRINCIPAL*/
 @media only screen and (max-width: 400px) {
-  .header-index .header-logo img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 100px; }
-  .header-index .navBar-index {
-    height: 150px;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .header-index .titulo-index {
-    margin-left: 0px;
-    text-align: center;
-    margin-left: auto;
-    padding-top: 0px;
-    font-size: 40px; }
-  .header-index .button-tienda {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 15px;
-    margin-bottom: 200px; }
+  .header-index {
+    width: 100%; }
+    .header-index .header-logo img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px; }
+    .header-index .navBar-index {
+      height: 150px;
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .header-index .titulo-index {
+      text-align: center;
+      margin-left: auto;
+      margin-right: 20px;
+      padding-top: 0px;
+      font-size: 40px; }
+    .header-index .button-tienda {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      margin-bottom: 200px; }
   .nuevosIngresos .nuevosIngresos-titulo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     font-size: 25px; }
-  .nuevosIngresos .nuevosIngresos-list li img {
-    width: 120px;
-    height: 120px; }
-  .nuevosIngresos .nuevosIngresos-list li .btn {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 25px;
-    margin-right: 100px;
-    margin-bottom: 70px;
-    font-size: 11px; }
+  .nuevosIngresos .nuevosIngresos-list {
+    box-sizing: border-box;
+    padding-left: 0px; }
+    .nuevosIngresos .nuevosIngresos-list li {
+      padding-left: 0px;
+      margin-right: 0px; }
+      .nuevosIngresos .nuevosIngresos-list li img {
+        width: 80px;
+        height: 80px; }
+      .nuevosIngresos .nuevosIngresos-list li .btn {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        margin-top: 20px; }
   .columns {
     display: inline-block;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
     margin-right: 50px;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-bottom: 10px; }
     .columns .columns-list .columns-item {
       font-family: 'IBM Plex Sans', sans-serif;
@@ -975,20 +980,25 @@ html {
         padding-bottom: 5px; }
   .topVentas .topVentas-titulo {
     display: block;
-    margin-top: 10px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     font-size: 25px; }
-  .topVentas .topVentas-list li img {
-    width: 120px;
-    height: 120px; }
-  .topVentas .topVentas-list li .btn {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 25px;
-    margin-right: 100px;
-    font-size: 11px; }
+  .topVentas .topVentas-list {
+    box-sizing: border-box;
+    padding-left: 0px; }
+    .topVentas .topVentas-list li {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-right: 0px;
+      margin-left: 50px; }
+      .topVentas .topVentas-list li img {
+        width: 80px;
+        height: 80px; }
+      .topVentas .topVentas-list li .btn {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        margin-top: 20px; }
   .footer {
     height: 300px;
     width: 100%;
@@ -1176,38 +1186,40 @@ html {
     margin-right: 28px;
     padding-top: 100px;
     padding-bottom: 0px;
-    font-size: 70px; }
-  .header-libros .dropdown {
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-    font-size: 10px;
-    display: inline-block;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-bottom: 300px;
-    margin-left: 150px; }
-    .header-libros .dropdown .dropdown-menu {
-      text-align: center; }
-      .header-libros .dropdown .dropdown-menu li a button {
-        margin-bottom: 10px; }
+    font-size: 40px; }
   .header-libros .categoriaLibros {
-    display: none; }
-  .seccionesTienda .seccionesTienda-titulo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 35px; }
-  .seccionesTienda .seccionesTienda-list .seccionesTienda-item img {
-    width: 120px;
-    height: 120px;
-    margin-right: 90px; }
-  .seccionesTienda .seccionesTienda-list .seccionesTienda-item .btn {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 25px;
-    margin-right: 100px;
-    margin-bottom: 70px;
-    font-size: 11px; } }
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 0px; }
+    .header-libros .categoriaLibros a {
+      display: block;
+      margin: 0px auto;
+      margin-bottom: 10px;
+      width: 50%;
+      text-align: center; }
+  .seccionesTienda {
+    margin-top: 100px; }
+    .seccionesTienda .seccionesTienda-titulo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 25px; }
+    .seccionesTienda .seccionesTienda-list {
+      padding-left: 0px; }
+      .seccionesTienda .seccionesTienda-list .seccionesTienda-item {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 50px;
+        margin-bottom: 40px; }
+        .seccionesTienda .seccionesTienda-list .seccionesTienda-item img {
+          width: 80px;
+          height: 80px; }
+        .seccionesTienda .seccionesTienda-list .seccionesTienda-item .btn {
+          display: flex;
+          flex-direction: column;
+          margin: 0px auto;
+          margin-top: 20px; } }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .header-libros {
@@ -1280,10 +1292,8 @@ html {
       margin-right: auto; }
     .header-guiadecompra .titulo-guiadecompra {
       text-align: center;
-      margin-left: auto;
-      margin-right: 28px;
-      padding-top: 30px;
-      font-size: 30px; }
+      margin: 0px auto;
+      font-size: 40px; }
     .header-guiadecompra .subtitulo-guiadecompra {
       text-align: center;
       margin-left: auto;
@@ -1304,7 +1314,7 @@ html {
       height: 350px;
       background-color: #17a2b8;
       color: white;
-      padding: 50px 30px 30px 20px; }
+      padding: 25px 30px 30px 20px; }
       .main-guia .paso-1 h2 {
         text-align: center;
         padding-left: 10px;
@@ -1328,7 +1338,7 @@ html {
       height: 350px;
       background-color: white;
       color: #17a2b8;
-      padding: 50px 30px 30px 20px; }
+      padding: 25px 30px 30px 20px; }
       .main-guia .paso-2 h2 {
         text-align: center;
         padding-left: 10px;
@@ -1352,7 +1362,7 @@ html {
       height: 350px;
       background-color: black;
       color: white;
-      padding: 50px 30px 30px 20px; }
+      padding: 25px 30px 30px 20px; }
       .main-guia .paso-3 h2 {
         text-align: center;
         padding-left: 10px;
@@ -1376,7 +1386,7 @@ html {
       height: 350px;
       background-color: #17a2b8;
       color: white;
-      padding: 50px 30px 30px 20px; }
+      padding: 25px 30px 30px 20px; }
       .main-guia .paso-4 h2 {
         text-align: center;
         padding-left: 10px;
@@ -1400,7 +1410,7 @@ html {
       height: 350px;
       background-color: white;
       color: #17a2b8;
-      padding: 50px 30px 30px 20px; }
+      padding: 25px 30px 30px 20px; }
       .main-guia .paso-5 h2 {
         text-align: center;
         padding-left: 10px;
@@ -1424,7 +1434,7 @@ html {
       height: 350px;
       background-color: black;
       color: white;
-      padding: 50px 30px 30px 20px; }
+      padding: 25px 30px 30px 20px; }
       .main-guia .paso-6 h2 {
         text-align: center;
         padding-left: 10px;
