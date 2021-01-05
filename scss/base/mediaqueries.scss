@@ -124,11 +124,62 @@
     }
   }
 
+  .newsletter{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    button:hover{
+      animation: pulse 1s;
+    }
+    .newsletter-titulo{
+      display: block;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      font-size: 25px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .newsletter-texto{
+      display: block;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      font-size: 15px;
+    }
+    .newsletter-form{
+      text-align: center;
+      margin-right: 25%;
+      margin-left: 25%;
+    }
+    .newsletter-btn{
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      padding: 0px 3px 0px 3px;
+      text-align: center;
+      font-size: 15px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      border-radius: 30px;
+      padding: 5px 10px 5px 10px;
+      transition: all 0.5s ease;
+      background-color: $colorblue;
+      color: white;
+      border: $colorblue;
+    }
+  
+    .newsletter-btn:hover{
+      background-color: #FFFFFF;
+      color: $colorblue;
+      border-color: $colorblue;
+    }
+  }
+
   .footer{
     height: 300px;
     width: 100%;
     margin-left: 0px;
-    padding-left: 0px;
     position: relative;
     margin-top: 0px;
     bottom: 0;
@@ -136,51 +187,68 @@
       background-color: #17a2b8;
       color: #FFFFFF;
       list-style-type: none;
-      display: block;
+      display: flex;
+      justify-content: space-around;
       margin-bottom: 0px;
-      padding-top: 50px;
-      padding-bottom: 50px;
       padding-left: 0px;
+      padding-top: 40px;
+      padding-bottom: 20px;
     
       li{
-        font-size: 20px;
-        font-family: 'Rubik', sans-serif, bold;
-        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+        text-decoration: none;
         color: white;
         padding-top: 20px;
-        padding-bottom: 10px;
-        padding-left: 0px;
-      }
-    
-      .footer-direccion{
-        display: block;
+        padding-bottom: 20px;
+  
         h3{
+          font-size: 20px;
+          padding-bottom: 10px;
+        }
+  
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 10px;
           a{
-            font-size: 20px;
-            color: #FFFFFF;
             text-decoration: none;
-            list-style-type: none;
+            color: white;
           }
-        } 
-    
-        .footer-direccion:hover{
-          animation: pulse 1s ease-in-out;
+        }
+      }
+
+      } 
+      .footer-redesSociales{
+        color: white;
+        .redesSociales1{
+          padding-left: 100px;
+        }
+        .redesSociales2{
+          text-decoration: none;
+          padding-left: 44px;
+          a{
+            color: white;
+            text-decoration: none;
+            padding-left: 5px;
+          }
         }
       } 
-    }
-    .footer-redesSociales{
-        img{
-          display: inline-block;
-          width: 35px;
-          height: 35px;
-          margin-right: 4px;
-          margin-left: 4px;
+
+      .footer-direccion{
+        background-color: #17a2b8;
+        padding-bottom: 40px;
+        iframe{
+          border-radius: 10px;
+          display: block;
+          margin: auto; 
+          width: 350px;
+          height: 300px;
         }
-      .footer-redesSociales a img:hover{
-        animation: pulse 1s ease-in-out;
-      }
-    } 
+      } 
+  
     .footer-pie{ 
+      width: 100%;
+      font-family: 'IBM Plex Sans', sans-serif;
       display: block;
       text-align: center;
       margin-top: 0px;
@@ -328,55 +396,89 @@
   }
 
   .footer{
-    background-color: #17a2b8;
-    color: #FFFFFF;
+    height: 300px;
     width: 100%;
-    margin-bottom: 0;
-    padding-top: 25px;
-
+    margin-left: 0px;
+    position: relative;
+    margin-top: 0px;
+    bottom: 0;
     .footer-list{
-    margin-top: 12.5px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-
-    li{
-      font-family: 'Rubik', sans-serif, bold;
-      text-align: center;
-      color: white;
-      padding-top: 0px;
-      padding-bottom: 15px;
-    }
-    .copyright{
-      h3{
-        font-size: 20px;
-      }
-    }
+      background-color: #17a2b8;
+      color: #FFFFFF;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 0px;
+      padding-left: 0px;
+      padding-top: 40px;
+      padding-bottom: 20px;
     
-    .direccion{
-      h3{
-        a{
+      li{
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+  
+        h3{
+          font-size: 30px;
+          padding-bottom: 10px;
+        }
+  
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
           font-size: 20px;
-          color: #FFFFFF;
+          a{
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+
+      } 
+      .footer-redesSociales{
+        color: white;
+        .redesSociales1{
+          padding-left: 100px;
+        }
+        .redesSociales2{
           text-decoration: none;
-          list-style-type: none;
+          padding-left: 44px;
+          a{
+            color: white;
+            text-decoration: none;
+            padding-left: 5px;
+          }
         }
-      }
-    }
-    
-    
-    .redes-sociales{
-      a{
-        img{
-          display: inline-block;
-          width: 25px;
-          height: 25px;
-          margin-right: 4px;
-          margin-left: 4px;
+      } 
+
+      .footer-direccion{
+        background-color: #17a2b8;
+        padding-bottom: 40px;
+        iframe{
+          border-radius: 10px;
+          display: block;
+          margin: auto; 
+          width: 800px;
+          height: 400px;
         }
-      }
-    }
+      } 
+  
+    .footer-pie{ 
+      width: 100%;
+      font-family: 'IBM Plex Sans', sans-serif;
+      display: block;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      color: #FFFFFF;
+      background-color: #222;
+      padding-top: 25px;
+      padding-bottom: 10px;
     }
   }
 }

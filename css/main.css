@@ -40,11 +40,6 @@ html {
         .footer .footer-list li p a {
           text-decoration: none;
           color: white; }
-    .footer .footer-list .footer-direccion iframe {
-      width: 400px;
-      height: 400px; }
-    .footer .footer-list .footer-direccion .footer-direccion:hover {
-      animation: pulse 1s ease-in-out; }
     .footer .footer-list .footer-redesSociales {
       color: white; }
       .footer .footer-list .footer-redesSociales .redesSociales1 {
@@ -56,6 +51,15 @@ html {
           color: white;
           text-decoration: none;
           padding-left: 5px; }
+  .footer .footer-direccion {
+    background-color: #17a2b8;
+    padding-bottom: 40px; }
+    .footer .footer-direccion iframe {
+      border-radius: 10px;
+      display: block;
+      margin: auto;
+      width: 1700px;
+      height: 400px; }
   .footer .footer-pie {
     font-family: 'IBM Plex Sans', sans-serif;
     display: block;
@@ -127,15 +131,13 @@ html {
     transition: color 1.5s;
     font-size: 110%; }
     .header-index .navBar-index .navBar-list .nav-item a {
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      transition: color 0.5s;
       color: black;
-      text-decoration: none;
-      background-image: linear-gradient(#17a2b8, #17a2b8);
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: 0% 2px;
-      transition: background-size .5s; }
-    .header-index .navBar-index .navBar-list .nav-item a:hover, .header-index .navBar-index .navBar-list .nav-item a:focus {
-      background-size: 100% 2px; }
+      font-size: 100%; }
+    .header-index .navBar-index .navBar-list .nav-item a:hover {
+      color: #17a2b8; }
 
 .header-index .header-logo {
   display: block;
@@ -183,7 +185,7 @@ html {
   width: 300px;
   text-align: center;
   transition: color 1.5s;
-  font-size: 100%; }
+  font-size: 110%; }
   .header-libros .navBar-libros .navBar-list .nav-item a {
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -244,7 +246,7 @@ html {
     width: 300px;
     text-align: center;
     transition: color 1.5s;
-    font-size: 100%; }
+    font-size: 110%; }
     .header-guiadecompra .navBar-guiadecompra .navBar-list .nav-item a {
       letter-spacing: 1px;
       text-transform: capitalize;
@@ -291,7 +293,7 @@ html {
       width: 300px;
       text-align: center;
       transition: color 1.5s;
-      font-size: 100%; }
+      font-size: 110%; }
       .header-marca .navBar-marca .navBar-list .nav-item a {
         letter-spacing: 1px;
         text-transform: capitalize;
@@ -328,7 +330,7 @@ html {
       width: 300px;
       text-align: center;
       transition: color 1.5s;
-      font-size: 100%; }
+      font-size: 110%; }
       .header-contacto .navBar-contacto .navBar-list .nav-item a {
         letter-spacing: 1px;
         text-transform: capitalize;
@@ -999,11 +1001,53 @@ html {
         flex-direction: column;
         margin: 0px auto;
         margin-top: 20px; }
+  .newsletter {
+    margin-top: 80px;
+    margin-bottom: 100px; }
+    .newsletter button:hover {
+      animation: pulse 1s; }
+    .newsletter .newsletter-titulo {
+      display: block;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      font-size: 25px;
+      margin-right: 10px;
+      margin-left: 10px; }
+    .newsletter .newsletter-texto {
+      display: block;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      font-size: 15px; }
+    .newsletter .newsletter-form {
+      text-align: center;
+      margin-right: 25%;
+      margin-left: 25%; }
+    .newsletter .newsletter-btn {
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      padding: 0px 3px 0px 3px;
+      text-align: center;
+      font-size: 15px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 30px;
+      padding: 5px 10px 5px 10px;
+      transition: all 0.5s ease;
+      background-color: #17a2b8;
+      color: white;
+      border: #17a2b8; }
+    .newsletter .newsletter-btn:hover {
+      background-color: #FFFFFF;
+      color: #17a2b8;
+      border-color: #17a2b8; }
   .footer {
     height: 300px;
     width: 100%;
     margin-left: 0px;
-    padding-left: 0px;
     position: relative;
     margin-top: 0px;
     bottom: 0; }
@@ -1011,37 +1055,51 @@ html {
       background-color: #17a2b8;
       color: #FFFFFF;
       list-style-type: none;
-      display: block;
+      display: flex;
+      justify-content: space-around;
       margin-bottom: 0px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-left: 0px; }
+      padding-left: 0px;
+      padding-top: 40px;
+      padding-bottom: 20px; }
       .footer .footer-list li {
-        font-size: 20px;
-        font-family: 'Rubik', sans-serif, bold;
-        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+        text-decoration: none;
         color: white;
         padding-top: 20px;
-        padding-bottom: 10px;
-        padding-left: 0px; }
-      .footer .footer-list .footer-direccion {
-        display: block; }
-        .footer .footer-list .footer-direccion h3 a {
+        padding-bottom: 20px; }
+        .footer .footer-list li h3 {
           font-size: 20px;
-          color: #FFFFFF;
+          padding-bottom: 10px; }
+        .footer .footer-list li p {
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 10px; }
+          .footer .footer-list li p a {
+            text-decoration: none;
+            color: white; }
+    .footer .footer-redesSociales {
+      color: white; }
+      .footer .footer-redesSociales .redesSociales1 {
+        padding-left: 100px; }
+      .footer .footer-redesSociales .redesSociales2 {
+        text-decoration: none;
+        padding-left: 44px; }
+        .footer .footer-redesSociales .redesSociales2 a {
+          color: white;
           text-decoration: none;
-          list-style-type: none; }
-        .footer .footer-list .footer-direccion .footer-direccion:hover {
-          animation: pulse 1s ease-in-out; }
-    .footer .footer-redesSociales img {
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      margin-right: 4px;
-      margin-left: 4px; }
-    .footer .footer-redesSociales .footer-redesSociales a img:hover {
-      animation: pulse 1s ease-in-out; }
+          padding-left: 5px; }
+    .footer .footer-direccion {
+      background-color: #17a2b8;
+      padding-bottom: 40px; }
+      .footer .footer-direccion iframe {
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        width: 350px;
+        height: 300px; }
     .footer .footer-pie {
+      width: 100%;
+      font-family: 'IBM Plex Sans', sans-serif;
       display: block;
       text-align: center;
       margin-top: 0px;
@@ -1141,36 +1199,72 @@ html {
     margin-right: 50px;
     font-size: 18px; }
   .footer {
-    background-color: #17a2b8;
-    color: #FFFFFF;
+    height: 300px;
     width: 100%;
-    margin-bottom: 0;
-    padding-top: 25px; }
+    margin-left: 0px;
+    position: relative;
+    margin-top: 0px;
+    bottom: 0; }
     .footer .footer-list {
-      margin-top: 12.5px;
+      background-color: #17a2b8;
+      color: #FFFFFF;
       list-style-type: none;
       display: flex;
-      flex-direction: row;
-      align-items: baseline; }
+      justify-content: space-around;
+      margin-bottom: 0px;
+      padding-left: 0px;
+      padding-top: 40px;
+      padding-bottom: 20px; }
       .footer .footer-list li {
-        font-family: 'Rubik', sans-serif, bold;
-        text-align: center;
-        color: white;
-        padding-top: 0px;
-        padding-bottom: 15px; }
-      .footer .footer-list .copyright h3 {
-        font-size: 20px; }
-      .footer .footer-list .direccion h3 a {
-        font-size: 20px;
-        color: #FFFFFF;
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
         text-decoration: none;
-        list-style-type: none; }
-      .footer .footer-list .redes-sociales a img {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        margin-right: 4px;
-        margin-left: 4px; } }
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        .footer .footer-list li h3 {
+          font-size: 30px;
+          padding-bottom: 10px; }
+        .footer .footer-list li p {
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px; }
+          .footer .footer-list li p a {
+            text-decoration: none;
+            color: white; }
+    .footer .footer-redesSociales {
+      color: white; }
+      .footer .footer-redesSociales .redesSociales1 {
+        padding-left: 100px; }
+      .footer .footer-redesSociales .redesSociales2 {
+        text-decoration: none;
+        padding-left: 44px; }
+        .footer .footer-redesSociales .redesSociales2 a {
+          color: white;
+          text-decoration: none;
+          padding-left: 5px; }
+    .footer .footer-direccion {
+      background-color: #17a2b8;
+      padding-bottom: 40px; }
+      .footer .footer-direccion iframe {
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        width: 800px;
+        height: 400px; }
+    .footer .footer-pie {
+      width: 100%;
+      font-family: 'IBM Plex Sans', sans-serif;
+      display: block;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      color: #FFFFFF;
+      background-color: #222;
+      padding-top: 25px;
+      padding-bottom: 10px; } }
 
 /*TIENDA*/
 @media only screen and (max-width: 400px) {

@@ -47,17 +47,6 @@ html{
         }
       }
     }
-  
-    .footer-direccion{
-      iframe{
-        width: 400px;
-        height: 400px;
-      }
-  
-      .footer-direccion:hover{
-        animation: pulse 1s ease-in-out;
-      }
-    } 
     .footer-redesSociales{
       color: white;
       .redesSociales1{
@@ -74,6 +63,18 @@ html{
       }
     } 
   }
+
+  .footer-direccion{
+    background-color: #17a2b8;
+    padding-bottom: 40px;
+    iframe{
+      border-radius: 10px;
+      display: block;
+      margin: auto; 
+      width: 1700px;
+      height: 400px;
+    }
+  } 
 
   .footer-pie{ 
     font-family: 'IBM Plex Sans', sans-serif;

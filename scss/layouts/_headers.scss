@@ -12,19 +12,16 @@
         transition: color 1.5s;
         font-size: 110%;
 
-        a {
+        a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
           color: black;
-          text-decoration: none;
-          background-image: linear-gradient($colorblue, $colorblue);
-          background-position: 0% 100%;
-          background-repeat: no-repeat;
-          background-size: 0% 2px;
-          transition: background-size .5s;
-      }
-      
-      a:hover, a:focus {
-          background-size: 100% 2px;
-      }
+          font-size: 100%;
+        }
+        a:hover{
+          color: $colorblue;
+        }
       }
     }
   }
@@ -80,12 +77,13 @@
   }
 
   .navBar-libros{
-    .navBar-list{
+    .navBar-list{                   
       .nav-item{
         width: 300px;
         text-align: center;
         transition: color 1.5s;
-        font-size: 100%;
+        font-size: 110%;
+
         a{
           letter-spacing: 1px;
           text-transform: capitalize;
@@ -158,25 +156,25 @@
     width: 100%;
     background-color: white;
 
-      .navBar-list{
-        .nav-item{
-          width: 300px;
-          text-align: center;
-          transition: color 1.5s;
+    .navBar-list{                   
+      .nav-item{
+        width: 300px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 110%;
+
+        a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
           font-size: 100%;
-  
-          a{
-            letter-spacing: 1px;
-            text-transform: capitalize;
-            transition: color 0.5s;
-            color: black;
-            font-size: 100%;
-          }
-          a:hover{
-            color: $colorblue;
-          }
         }
-      } 
+        a:hover{
+          color: $colorblue;
+        }
+      }
+    }
     }
 
     .titulo-guiadecompra{
@@ -219,25 +217,25 @@
       height: 80px;
       width: 100%;
       background-color: white;
-      .navBar-list{
+      .navBar-list{                   
         .nav-item{
           width: 300px;
           text-align: center;
           transition: color 1.5s;
-          font-size: 100%;
-
+          font-size: 110%;
+  
           a{
-          letter-spacing: 1px;
-          text-transform: capitalize;
-          transition: color 0.5s;
-          color: black;
-          font-size: 100%;
-        }
-        a:hover{
-          color: $colorblue;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            transition: color 0.5s;
+            color: black;
+            font-size: 100%;
+          }
+          a:hover{
+            color: $colorblue;
+          }
         }
       }
-    }
   }
   .titulo-marca {
     font-family: 'Roboto Slab', serif;
@@ -269,25 +267,25 @@
       height: 80px;
       width: 100%;
       background-color: white;
-      .navBar-list{
+      .navBar-list{                   
         .nav-item{
           width: 300px;
           text-align: center;
           transition: color 1.5s;
-          font-size: 100%;
-
+          font-size: 110%;
+  
           a{
-          letter-spacing: 1px;
-          text-transform: capitalize;
-          transition: color 0.5s;
-          color: black;
-          font-size: 100%;
-        }
-        a:hover{
-          color: $colorblue;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            transition: color 0.5s;
+            color: black;
+            font-size: 100%;
+          }
+          a:hover{
+            color: $colorblue;
+          }
         }
       }
-    }
   }
   .titulo-contacto {
     font-family: 'Roboto Slab', serif;
