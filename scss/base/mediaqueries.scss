@@ -19,6 +19,25 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      .navBar-list{
+        .nav-item{
+          width: 300px;
+          text-align: center;
+          transition: color 1.5s;
+          font-size: 100%;
+
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+        }
+        .nav-item:hover {
+          color: $colorblue;
+        }
+      }
+    }
     }
     .titulo-index{
       text-align: center;
@@ -27,12 +46,14 @@
       padding-top: 0px;
       font-size: 30px;
     }
-    .button-tienda{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 15px;
-      margin-bottom: 200px;
+    a{
+      .button-tienda{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        margin-bottom: 200px;
+      }
     }
   }
 
@@ -49,6 +70,7 @@
       li{
         padding-left: 0px;
         margin-right: 0px;
+        margin-left: 10px;
         .btn{
           display: flex;
           flex-direction: column;
@@ -107,7 +129,7 @@
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 0px;
-        margin-left: 50px;
+        margin-left: 10px;
         img{
           width: 80px;
           height: 80px;
@@ -181,6 +203,7 @@
     position: relative;
     margin-top: 0px;
     bottom: 0;
+
     .footer-list{
       background-color: #17a2b8;
       color: #FFFFFF;
@@ -201,7 +224,7 @@
         padding-bottom: 20px;
   
         h3{
-          font-size: 20px;
+          font-size: 16px;
           padding-bottom: 10px;
         }
   
@@ -280,17 +303,17 @@
   
     .navBar-list{
       .nav-item{
-        width: 180px;
+        width: 150px;
         text-align: center;
         transition: color 1.5s;
-        font-size: 100%;
+        font-size: 14px;
     
           a{
           letter-spacing: 1px;
           text-transform: capitalize;
           transition: color 0.5s;
           color: black;
-          font-size: 1rem;
+          font-size: 100%;
           }
         }
       }
@@ -321,10 +344,7 @@
     }
 
     .nuevosIngresos-list{
-      display: inline-block;
-      padding: 0px;
-      margin: 0px;
-      .seccionesTienda-item{
+      .nuevosIngresos-item{
         margin: 0px 0px 0px 0px;
         padding-right: 0px;
         .button-libro{
@@ -339,23 +359,22 @@
 
   .columns{
     .columns-list{
+      width: 85%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
       margin-top: 10px;
       margin-right: 50px;
-      margin-left: 75px;
+      margin-left: 55px;
       margin-bottom: 100px;
 
       .columns-item{
         font-family: 'IBM Plex Sans', sans-serif;
-        display: inline-block;
         color: white;
         text-align: center;
         font-size: 10px;
         padding-top: 10px;
-        padding-right: 40px;
-        padding-left: 65px;
+        padding-right: 0px;
+        padding-left: 38px;
 
         h3{
           font-size: 20px;
@@ -374,22 +393,16 @@
     }
 
     .topVentas-list{
-      li{
+      .topVentas-item{
+        margin: 0px 0px 0px 0px;
         padding-right: 0px;
-        img{
-          width: 200px;
-          height: 200px;
-        }
-
-        .btn{
-          display: flex;
-          flex-direction: column;
+        .button-libro{
           margin-top: 20px;
-          margin-left: 90px;
-          margin-right: 50px;
-          font-size: 18px;
+          margin-right: 90px;
+          font-size: 16px;
+          margin-bottom: 80px;
+          }
         }
-      }
     }
   }
 
@@ -542,10 +555,7 @@
       li{
         margin: auto;
         margin-bottom: 80px;
-        img{
-          width: 200px;
-          height: 200px;
-        }
+        margin-left: 60px;
         .btn{
           display: flex;
           flex-direction: column;
@@ -559,12 +569,11 @@
   }
 
   .columns{
-    width: 75%;
+    width: 92%;
     margin: auto;
     .columns-list{
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
 
       .columns-item{
         font-family: 'IBM Plex Sans', sans-serif;
@@ -573,7 +582,7 @@
         font-size: 10px;
         padding-top: 10px;
         padding-right: 40px;
-        padding-left: 40px;
+        padding-left: 70px;
 
         h3{
           font-size: 20px;
@@ -594,10 +603,7 @@
     .topVentas-list{
       li{
         margin: auto;
-        img{
-          width: 200px;
-          height: 200px;
-        }
+        margin-left: 60px;
 
         .btn{
           display: flex;
@@ -936,6 +942,25 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      .navBar-list{
+        .nav-item{
+          width: 300px;
+          text-align: center;
+          transition: color 1.5s;
+          font-size: 100%;
+
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+        }
+        .nav-item:hover {
+          color: $colorblue;
+        }
+      }
+    }
     }
     .titulo-libros{
       text-align: center;
@@ -973,7 +998,7 @@
         padding-left: 0px;
         padding-right: 0px;
         margin-right: 0px;
-        margin-left: 50px;
+        margin-left: 10px;
         margin-bottom: 40px;
         img{
           width: 80px;
@@ -1005,17 +1030,17 @@
   
         .navBar-list{
           .nav-item{
-            width: 180px;
+            width: 150px;
             text-align: center;
             transition: color 1.5s;
-            font-size: 100%;
+            font-size: 14px;
         
               a{
               letter-spacing: 1px;
               text-transform: capitalize;
               transition: color 0.5s;
               color: black;
-              font-size: 1rem;
+              font-size: 100%;
               }
             }
           }
@@ -1050,20 +1075,19 @@
   }
 
   .seccionesTienda{
-    .seccionesTienda-titulo{
-      h2{
+      .seccionesTienda-titulo{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         font-size: 40px;
       }
-    }
 
     .seccionesTienda-list{
       .seccionesTienda-item{
         margin: 0px 0px 0px 0px;
         padding-right: 0px;
+        padding-left: 35px;
         .button-libro{
           margin-top: 20px;
           margin-right: 90px;
@@ -1076,7 +1100,7 @@
 }
 
 /*Laptop Styles*/ 
-@media only screen and (min-width: 401px) and (max-width: 768px){
+@media only screen and (min-width: 769px) and (max-width: 1024px){
   .header-libros{
     height: 800px;
       .navBar-libros{
@@ -1262,11 +1286,31 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      .navBar-list{
+        .nav-item{
+          width: 300px;
+          text-align: center;
+          transition: color 1.5s;
+          font-size: 100%;
+
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+        }
+        .nav-item:hover {
+          color: $colorblue;
+        }
+      }
+    }
     }
 
     .titulo-guiadecompra{
       text-align: center;
       margin: 0px auto;
+      padding-left: 0px;
       font-size: 40px;
     }
 
@@ -1285,10 +1329,10 @@
       display: block;
       text-align: center;
       float: none;
-      width: 350px;
+      width: 92%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
       margin-bottom: 30px;
-      margin-left: 25px;
+      margin-left: 10px;
       border-radius: 40px;
       height: 350px;
       background-color: #17a2b8;
@@ -1298,16 +1342,16 @@
       h2{
         text-align: center;
         padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
+        padding-top: 0px;
+        font-size: 20px;
       }
     
       p{
         text-align: center;
-        padding-top: 15px;
+        padding-top: 12px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 15px;
+        font-size: 13px;
       }
     }
 
@@ -1315,29 +1359,29 @@
       display: block;
       text-align: center;
       float: none;
-      width: 350px;
+      width: 92%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
       margin-bottom: 30px;
-      margin-left: 25px;
+      margin-left: 10px;
       border-radius: 40px;
       height: 350px;
       background-color: white;
-      color: #17a2b8;
+      color: $colorblue;
       padding: 25px 30px 30px 20px;
 
       h2{
         text-align: center;
         padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
+        padding-top: 0px;
+        font-size: 20px;
       }
     
       p{
         text-align: center;
-        padding-top: 15px;
+        padding-top: 12px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 15px;
+        font-size: 13px;
       }
     }
 
@@ -1345,10 +1389,10 @@
       display: block;
       text-align: center;
       float: none;
-      width: 350px;
+      width: 92%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
       margin-bottom: 30px;
-      margin-left: 25px;
+      margin-left: 10px;
       border-radius: 40px;
       height: 350px;
       background-color: black;
@@ -1358,16 +1402,16 @@
       h2{
         text-align: center;
         padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
+        padding-top: 0px;
+        font-size: 20px;
       }
     
       p{
         text-align: center;
-        padding-top: 15px;
+        padding-top: 12px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 15px;
+        font-size: 13px;
       }
     }
 
@@ -1375,10 +1419,10 @@
       display: block;
       text-align: center;
       float: none;
-      width: 350px;
+      width: 92%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
       margin-bottom: 30px;
-      margin-left: 25px;
+      margin-left: 10px;
       border-radius: 40px;
       height: 350px;
       background-color: #17a2b8;
@@ -1388,16 +1432,16 @@
       h2{
         text-align: center;
         padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
+        padding-top: 0px;
+        font-size: 20px;
       }
     
       p{
         text-align: center;
-        padding-top: 15px;
+        padding-top: 12px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 15px;
+        font-size: 13px;
       }
     }
 
@@ -1405,29 +1449,29 @@
       display: block;
       text-align: center;
       float: none;
-      width: 350px;
+      width: 92%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
       margin-bottom: 30px;
-      margin-left: 25px;
+      margin-left: 10px;
       border-radius: 40px;
       height: 350px;
       background-color: white;
-      color: #17a2b8;
+      color: $colorblue;
       padding: 25px 30px 30px 20px;
 
       h2{
         text-align: center;
         padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
+        padding-top: 0px;
+        font-size: 20px;
       }
     
       p{
         text-align: center;
-        padding-top: 15px;
+        padding-top: 12px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 15px;
+        font-size: 13px;
       }
     }
 
@@ -1435,10 +1479,10 @@
       display: block;
       text-align: center;
       float: none;
-      width: 350px;
+      width: 92%;
       filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
       margin-bottom: 30px;
-      margin-left: 25px;
+      margin-left: 10px;
       border-radius: 40px;
       height: 350px;
       background-color: black;
@@ -1448,16 +1492,16 @@
       h2{
         text-align: center;
         padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
+        padding-top: 0px;
+        font-size: 20px;
       }
     
       p{
         text-align: center;
-        padding-top: 15px;
+        padding-top: 12px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 15px;
+        font-size: 13px;
       }
     }
   }
@@ -1481,10 +1525,10 @@
   
     .navBar-list{
       .nav-item{
-        width: 180px;
+        width: 150px;
         text-align: center;
         transition: color 1.5s;
-        font-size: 100%;
+        font-size: 14px;
     
           a{
           letter-spacing: 1px;
@@ -1525,20 +1569,23 @@
       height: 400px;
       background-color: #17a2b8;
       color: white;
-      padding: 55px 40px 40px 30px;
+      padding: 35px 40px 40px 30px;
     
       h2{
+        font-size: 20px;
         text-align: left;
         padding-left: 35px;
-        padding-top: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
       }
     
       p{
+        font-size: 13px;
         text-align: left;
-        padding-top: 15px;
+        padding-top: 10px;
         padding-right: 30px;
         padding-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
       }
     }
 
@@ -1553,15 +1600,17 @@
       height: 400px;
       background-color: #17a2b8;
       color: white;
-      padding: 55px 40px 40px 30px;
+      padding: 35px 40px 40px 30px;
     
       h2{
+        font-size: 20px;
         text-align: left;
         padding-left: 35px;
         padding-top: 15px;
       }
     
       p{
+        font-size: 13px;
         text-align: left;
         padding-top: 15px;
         padding-right: 30px;
@@ -1581,15 +1630,17 @@
       height: 400px;
       background-color: black;
       color: white;
-      padding: 55px 40px 40px 30px;
+      padding: 35px 40px 40px 30px;
     
       h2{
+        font-size: 20px;
         text-align: left;
         padding-left: 35px;
         padding-top: 15px;
       }
     
       p{
+        font-size: 13px;
         text-align: left;
         padding-top: 15px;
         padding-right: 30px;
@@ -1609,15 +1660,17 @@
       height: 400px;
       background-color: #17a2b8;
       color: white;
-      padding: 55px 40px 40px 30px;
+      padding: 35px 40px 40px 30px;
     
       h2{
+        font-size: 20px;
         text-align: left;
         padding-left: 35px;
         padding-top: 15px;
       }
     
       p{
+        font-size: 13px;
         text-align: left;
         padding-top: 15px;
         padding-right: 30px;
@@ -1637,15 +1690,17 @@
       height: 400px;
       background-color: white;
       color: #17a2b8;
-      padding: 55px 40px 40px 30px;
+      padding: 35px 40px 40px 30px;
     
       h2{
+        font-size: 20px;
         text-align: left;
         padding-left: 35px;
         padding-top: 15px;
       }
     
       p{
+        font-size: 13px;
         text-align: left;
         padding-top: 15px;
         padding-right: 30px;
@@ -1665,15 +1720,17 @@
       height: 400px;
       background-color: black;
       color: white;
-      padding: 55px 40px 40px 30px;
+      padding: 35px 40px 40px 30px;
     
       h2{
+        font-size: 20px;
         text-align: left;
         padding-left: 35px;
         padding-top: 15px;
       }
     
       p{
+        font-size: 13px;
         text-align: left;
         padding-top: 15px;
         padding-right: 30px;
@@ -1685,7 +1742,7 @@
 }
 
 /*Laptop Styles*/ 
-@media only screen and (min-width: 401px) and (max-width: 768px){
+@media only screen and (min-width: 769px) and (max-width: 1024px){
   .header-guiadecompra{
     .header-logo{
       display: block;
@@ -1722,7 +1779,7 @@
       margin-left: auto;
       margin-right: 28px;
       padding-top: 30px;
-      font-size: 60px;
+      font-size: 50px;
     }
 
     .subtitulo-guiadecompra{
@@ -1730,7 +1787,7 @@
       margin-left: auto;
       margin-right: 28px;
       padding-top: 0px;
-      font-size: 30px;
+      font-size: 25px;
     }
   }
 
@@ -1751,7 +1808,7 @@
       h2{
         text-align: left;
         padding-left: 35px;
-        padding-top: 15px;
+        padding-top: 0px;
       }
     
       p{
@@ -1759,7 +1816,7 @@
         padding-top: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
 
@@ -1779,7 +1836,7 @@
       h2{
         text-align: left;
         padding-left: 35px;
-        padding-top: 15px;
+        padding-top: 0px;
       }
     
       p{
@@ -1787,7 +1844,7 @@
         padding-top: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
 
@@ -1807,7 +1864,7 @@
       h2{
         text-align: left;
         padding-left: 35px;
-        padding-top: 15px;
+        padding-top: 0px;
       }
     
       p{
@@ -1815,7 +1872,7 @@
         padding-top: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
 
@@ -1835,7 +1892,7 @@
       h2{
         text-align: left;
         padding-left: 35px;
-        padding-top: 15px;
+        padding-top: 0px;
       }
     
       p{
@@ -1843,7 +1900,7 @@
         padding-top: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
 
@@ -1863,7 +1920,7 @@
       h2{
         text-align: left;
         padding-left: 35px;
-        padding-top: 15px;
+        padding-top: 0px;
       }
     
       p{
@@ -1871,7 +1928,7 @@
         padding-top: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
 
@@ -1891,7 +1948,7 @@
       h2{
         text-align: left;
         padding-left: 35px;
-        padding-top: 15px;
+        padding-top: 0px;
       }
     
       p{
@@ -1899,7 +1956,7 @@
         padding-top: 15px;
         padding-right: 30px;
         padding-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -2150,6 +2207,25 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      .navBar-list{
+        .nav-item{
+          width: 300px;
+          text-align: center;
+          transition: color 1.5s;
+          font-size: 100%;
+
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+        }
+        .nav-item:hover {
+          color: $colorblue;
+        }
+      }
+    }
     }
     .titulo-marca{
       text-align: center;
@@ -2161,15 +2237,15 @@
   }
 
   .main-marca{
-    height: 2200px;
+    height: 1400px;
   
     .imagenes{
-      width: 80%;
+      width: 90%;
       float: left;
-      margin-left: 20%;
+      margin-left: 8%;
     
       #carouselExampleSlidesOnly{
-        width: 250px;
+        width: 95%;
         height: 234px;
       }
     }
@@ -2250,10 +2326,10 @@
   
     .navBar-list{
       .nav-item{
-        width: 180px;
+        width: 150px;
         text-align: center;
         transition: color 1.5s;
-        font-size: 100%;
+        font-size: 14px;
     
           a{
           letter-spacing: 1px;
@@ -2275,7 +2351,7 @@
   }
 
   .main-marca{
-    height: 2100px;
+    height: 1300px;
   
     .imagenes{
       display: none;
@@ -2347,7 +2423,7 @@
 }
 
 /*Laptop Styles*/ 
-@media only screen and (min-width: 401px) and (max-width: 768px){
+@media only screen and (min-width: 769px) and (max-width: 1024px){
   .header-marca{
     height: 600px;
     .header-logo{
@@ -2390,7 +2466,7 @@
   }
 
   .main-marca{
-    height: 2100px;
+    height: 1400px;
   
     .imagenes{
       display: none;
@@ -2505,7 +2581,7 @@
   }
 
   .main-marca{
-    height: 2100px;
+    height: 1400px;
   
     .imagenes{
       display: none;
@@ -2613,7 +2689,7 @@
             font-size: 100%;
           }
           .nav-item:hover {
-            color: #17a2b8;
+            color: $colorblue;
           }
         }
       }
@@ -2651,20 +2727,23 @@
         }
         
         h3{
-          color: #17a2b8;
+          color: $colorblue;
           font-family: 'Roboto Slab', serif;
         }
       }
       
       .btn{
+        margin-top: 10px;
         margin-right: 30%;
         margin-left: 40%;
-        background-color: #17a2b8;
+        background-color: $colorblue;
         color: #FFFFFF;
         border-radius: 20px;
     
         .btn:hover{
-          animation: pulse 1s;
+          background-color: white;
+          color: $colorblue;
+          border-color: $colorblue;
         }
       }
     }
@@ -2685,7 +2764,7 @@
     }
     
     .datos-contacto div h3{
-      color: #17a2b8;
+      color: colorblue;
       font-family: 'Roboto Slab', serif;
     }
     
@@ -2714,10 +2793,10 @@
   
     .navBar-list{
       .nav-item{
-        width: 180px;
+        width: 150px;
         text-align: center;
         transition: color 1.5s;
-        font-size: 100%;
+        font-size: 14px;
     
           a{
           letter-spacing: 1px;
@@ -2746,45 +2825,49 @@
     .formulario-contacto{
       float: left;
       width: 40%;
-      margin-left: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
     
       div{
+        padding-bottom: 5px;
         p{
           font-family: 'IBM Plex Sans', sans-serif;
           margin-bottom: 60px;
         }
         
         h3{
-          color: #17a2b8;
+          color: $colorblue;
           font-family: 'Roboto Slab', serif;
         }
       }
       
       .btn{
-        background-color: #17a2b8;
+        margin-top: 10px;
+        background-color: $colorblue;
         color: #FFFFFF;
         border-radius: 20px;
-    
-        .btn:hover{
-          animation: pulse 1s;
-        }
+      }
+      .btn:hover{
+        background-color: white;
+        color: $colorblue;
+        border-color: $colorblue;
       }
     }
   
     .datos-contacto{
       text-align: right;
       float: right;
-      width: 40%;
-      margin-right: 10%;
+      width: 45%;
+      margin-right: 5%;
     }
     
     
     .datos-contacto div{
-      margin-bottom: 180px;
+      margin-bottom: 200px;
     }
     
     .datos-contacto div h3{
-      color: #17a2b8;
+      color: $colorblue;
       font-family: 'Roboto Slab', serif;
     }
     
@@ -2795,7 +2878,7 @@
 }
 
 /*Laptop Styles*/ 
-@media only screen and (min-width: 401px) and (max-width: 768px){
+@media only screen and (min-width: 769px) and (max-width: 1024px){
   .header-contacto{
     height: 300px;
     .header-logo{
@@ -2860,6 +2943,7 @@
       }
       
       .btn{
+        margin-top: 10px;
         background-color: #17a2b8;
         color: #FFFFFF;
         border-radius: 20px;
@@ -2959,6 +3043,7 @@
       }
       
       .btn{
+        margin-top: 10px;
         background-color: #17a2b8;
         color: #FFFFFF;
         border-radius: 20px;
