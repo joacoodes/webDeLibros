@@ -316,26 +316,26 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 50px;
       font-size: 40px;
     }
 
     .nuevosIngresos-list{
-      li{
-        margin-bottom: 80px;
-        img{
-          width: 200px;
-          height: 200px;
-        }
-        .btn{
-          display: block;
+      display: inline-block;
+      padding: 0px;
+      margin: 0px;
+      .seccionesTienda-item{
+        margin: 0px 0px 0px 0px;
+        padding-right: 0px;
+        .button-libro{
           margin-top: 20px;
-          margin-left: 90px;
-          margin-right: 50px;
-          font-size: 18px;
+          margin-right: 90px;
+          font-size: 16px;
+          margin-bottom: 80px;
+          }
         }
       }
     }
-  }
 
   .columns{
     .columns-list{
@@ -375,6 +375,7 @@
 
     .topVentas-list{
       li{
+        padding-right: 0px;
         img{
           width: 200px;
           height: 200px;
@@ -561,10 +562,9 @@
     width: 75%;
     margin: auto;
     .columns-list{
-      display: inline-block;
+      display: flex;
       flex-direction: column;
       justify-content: center;
-
 
       .columns-item{
         font-family: 'IBM Plex Sans', sans-serif;
@@ -573,7 +573,7 @@
         font-size: 10px;
         padding-top: 10px;
         padding-right: 40px;
-        padding-left: 65px;
+        padding-left: 40px;
 
         h3{
           font-size: 20px;
@@ -779,22 +779,22 @@
   }
 
   .columns{
-    width: 75%;
+    width: 80%;
     margin: auto;
     .columns-list{
-      display: inline-block;
-      flex-direction: column;
-      justify-content: center;
-
-
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-left: 0px;
+      margin-right: 0px;
       .columns-item{
         font-family: 'IBM Plex Sans', sans-serif;
         color: white;
         text-align: center;
         font-size: 10px;
         padding-top: 10px;
-        padding-right: 40px;
-        padding-left: 65px;
+        padding-right: 100px;
+        padding-left: 100px;
 
         h3{
           font-size: 20px;
@@ -923,6 +923,8 @@
   }
 }
 
+
+
 /*TIENDA*/
 
 /*Mobile Styles*/
@@ -989,7 +991,173 @@
   }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px){
+/*Tablet Styles*/ 
+@media only screen and (min-width: 401px) and (max-width: 768px){
+  .header-libros{
+    height: 800px;
+      .navBar-libros{
+        padding-top: 20px;
+        height: 100px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+  
+        .navBar-list{
+          .nav-item{
+            width: 180px;
+            text-align: center;
+            transition: color 1.5s;
+            font-size: 100%;
+        
+              a{
+              letter-spacing: 1px;
+              text-transform: capitalize;
+              transition: color 0.5s;
+              color: black;
+              font-size: 1rem;
+              }
+            }
+          }
+    }
+
+    .titulo-libros{
+      text-align: center;
+      margin-top: 50px;
+      margin-right: auto;
+      margin-bottom: 30px;
+      margin-left: auto;
+      padding-top: 60px;
+      font-size: 70px;
+    }
+
+    .categoriaLibros{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 100px;
+      margin-left: 0px;
+      padding-left: 20px;
+
+      a{
+        .categoriaLibros-buttom{
+          display: inline-block;     
+          font-size: 15px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .seccionesTienda{
+    .seccionesTienda-titulo{
+      h2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
+    }
+
+    .seccionesTienda-list{
+      .seccionesTienda-item{
+        margin: 0px 0px 0px 0px;
+        padding-right: 0px;
+        .button-libro{
+          margin-top: 20px;
+          margin-right: 90px;
+          font-size: 16px;
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+}
+
+/*Laptop Styles*/ 
+@media only screen and (min-width: 401px) and (max-width: 768px){
+  .header-libros{
+    height: 800px;
+      .navBar-libros{
+        padding-top: 20px;
+        height: 100px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+  
+        .navBar-list{
+          .nav-item{
+            width: 170px;
+            .nav-link{
+              text-align: center;
+              font-size: 15px;
+            }
+          }
+        }
+    }
+
+    .titulo-libros{
+      text-align: center;
+      margin-top: 50px;
+      margin-right: auto;
+      margin-bottom: 30px;
+      margin-left: auto;
+      padding-top: 60px;
+      font-size: 70px;
+    }
+
+    .categoriaLibros{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 100px;
+      margin-left: 0px;
+      padding-left: 20px;
+
+      a{
+        .categoriaLibros-buttom{
+          display: inline-block;     
+          font-size: 15px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .seccionesTienda{
+    .seccionesTienda-titulo{
+      h2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
+    }
+
+    .seccionesTienda-list{
+      padding-left: 60px;
+      .seccionesTienda-item{
+        margin: 0px 0px 0px 40px;
+        img{
+          width: 200px;
+          height: 200px;
+        }
+        .button-libro{
+          margin-top: 20px;
+          margin-right: 90px;
+          font-size: 16px;
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+}
+
+/*Laptop L Styles*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
   .header-libros{
     height: 800px;
       .navBar-libros{
@@ -1071,6 +1239,9 @@
     }
   }
 }
+
+
+
 
 /*GUIA DE COMPRA*/
 
@@ -1292,7 +1463,8 @@
   }
 } 
 
-@media screen and (min-width: 401px) and (max-width: 960px){
+/*Tablet Styles*/ 
+@media only screen and (min-width: 401px) and (max-width: 768px){
   .header-guiadecompra{
     .header-logo{
       display: block;
@@ -1512,6 +1684,451 @@
   }
 }
 
+/*Laptop Styles*/ 
+@media only screen and (min-width: 401px) and (max-width: 768px){
+  .header-guiadecompra{
+    .header-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-guiadecompra{
+      height: 140px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
+        }
+      }
+    }
+    .titulo-guiadecompra{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
+    }
+
+    .subtitulo-guiadecompra{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 0px;
+      font-size: 30px;
+    }
+  }
+
+  .main-guia{
+    .paso-1{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 30px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: #17a2b8;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-2{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 30px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: #17a2b8;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-3{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 30px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: black;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-4{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 30px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: #17a2b8;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-5{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 100px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: white;
+      color: #17a2b8;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-6{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 100px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: black;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+/*Laptop L Styles*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+  .header-guiadecompra{
+    .header-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-guiadecompra{
+      height: 140px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
+        }
+      }
+    }
+    .titulo-guiadecompra{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
+    }
+
+    .subtitulo-guiadecompra{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 0px;
+      font-size: 30px;
+    }
+  }
+
+  .main-guia{
+    .paso-1{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 30px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: #17a2b8;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-2{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 30px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: #17a2b8;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-3{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 30px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: black;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-4{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 30px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: #17a2b8;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-5{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 100px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: white;
+      color: #17a2b8;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .paso-6{
+      text-align: center;
+      float: left;
+      width: 43%;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+      margin-bottom: 100px;
+      margin-left: 5%;
+      border-radius: 40px;
+      height: 400px;
+      background-color: black;
+      color: white;
+      padding: 55px 40px 40px 30px;
+    
+      h2{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 15px;
+      }
+    
+      p{
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+
+
 /*SOBRE NOSOTROS*/
 
 /*Mobile Styles*/
@@ -1614,7 +2231,8 @@
   }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px){
+/*Tablet Styles*/ 
+@media only screen and (min-width: 401px) and (max-width: 768px){
   .header-marca{
     height: 600px;
     .header-logo{
@@ -1725,10 +2343,241 @@
         }
       }
     }
-
-
   }
 }
+
+/*Laptop Styles*/ 
+@media only screen and (min-width: 401px) and (max-width: 768px){
+  .header-marca{
+    height: 600px;
+    .header-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-marca{
+      height: 140px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
+        }
+      }
+    }
+    .titulo-marca{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
+    }
+  }
+
+  .main-marca{
+    height: 2100px;
+  
+    .imagenes{
+      display: none;
+    
+      #carouselExampleSlidesOnly{
+        display: none;
+      }
+    }
+    
+    .carrusel-2{
+      display: block;
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%;
+      margin-bottom: 100px;
+    }
+    
+    .historia{
+      display: block;
+      width: 80%;
+      margin-left: 20%;
+    
+      .texto-1{
+        margin-bottom: 80px;
+
+        h2{
+          font-family: 'Roboto Slab', serif;
+          color: #17a2b8;
+          font-size: 35px;
+        }
+        
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px;
+        }
+      }
+      
+
+      
+      .texto-2{
+        margin-bottom: 80px;
+
+        h2{
+          font-family: 'Roboto Slab', serif;
+          color: #17a2b8;
+          font-size: 35px;
+        }
+        
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px;
+        }
+      }
+      .texto-3{
+        margin-bottom: 100px;
+        h2{
+          font-family: 'Roboto Slab', serif;
+          color: #17a2b8;
+          font-size: 35px;
+        }
+        
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*Laptop L Styles*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+  .header-marca{
+    height: 600px;
+    .header-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-marca{
+      height: 140px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
+        }
+      }
+    }
+    .titulo-marca{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
+    }
+  }
+
+  .main-marca{
+    height: 2100px;
+  
+    .imagenes{
+      display: none;
+    
+      #carouselExampleSlidesOnly{
+        display: none;
+      }
+    }
+    
+    .carrusel-2{
+      display: block;
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%;
+      margin-bottom: 100px;
+    }
+    
+    .historia{
+      display: block;
+      width: 80%;
+      margin-left: 20%;
+    
+      .texto-1{
+        margin-bottom: 80px;
+
+        h2{
+          font-family: 'Roboto Slab', serif;
+          color: #17a2b8;
+          font-size: 35px;
+        }
+        
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px;
+        }
+      }
+      
+
+      
+      .texto-2{
+        margin-bottom: 80px;
+
+        h2{
+          font-family: 'Roboto Slab', serif;
+          color: #17a2b8;
+          font-size: 35px;
+        }
+        
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px;
+        }
+      }
+      .texto-3{
+        margin-bottom: 100px;
+        h2{
+          font-family: 'Roboto Slab', serif;
+          color: #17a2b8;
+          font-size: 35px;
+        }
+        
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+
 
 /*CONTACTO*/
 
@@ -1846,7 +2695,206 @@
   }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px){
+/*Tablet Styles*/ 
+@media only screen and (min-width: 401px) and (max-width: 768px){
+  .header-contacto{
+    height: 300px;
+    .header-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-contacto{
+      height: 140px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
+        }
+      }
+    }
+    .titulo-contacto{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
+    }
+  }
+  
+  .main-contacto{
+    margin-top: 300px;
+    height: 800px;
+    width: 100%;
+  
+    .formulario-contacto{
+      float: left;
+      width: 40%;
+      margin-left: 10%;
+    
+      div{
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          margin-bottom: 60px;
+        }
+        
+        h3{
+          color: #17a2b8;
+          font-family: 'Roboto Slab', serif;
+        }
+      }
+      
+      .btn{
+        background-color: #17a2b8;
+        color: #FFFFFF;
+        border-radius: 20px;
+    
+        .btn:hover{
+          animation: pulse 1s;
+        }
+      }
+    }
+  
+    .datos-contacto{
+      text-align: right;
+      float: right;
+      width: 40%;
+      margin-right: 10%;
+    }
+    
+    
+    .datos-contacto div{
+      margin-bottom: 180px;
+    }
+    
+    .datos-contacto div h3{
+      color: #17a2b8;
+      font-family: 'Roboto Slab', serif;
+    }
+    
+    .datos-contacto div p{
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+  }
+}
+
+/*Laptop Styles*/ 
+@media only screen and (min-width: 401px) and (max-width: 768px){
+  .header-contacto{
+    height: 300px;
+    .header-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-contacto{
+      height: 140px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
+        }
+      }
+    }
+    .titulo-contacto{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
+    }
+  }
+  
+  .main-contacto{
+    margin-top: 300px;
+    height: 800px;
+    width: 100%;
+  
+    .formulario-contacto{
+      float: left;
+      width: 40%;
+      margin-left: 10%;
+    
+      div{
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          margin-bottom: 60px;
+        }
+        
+        h3{
+          color: #17a2b8;
+          font-family: 'Roboto Slab', serif;
+        }
+      }
+      
+      .btn{
+        background-color: #17a2b8;
+        color: #FFFFFF;
+        border-radius: 20px;
+    
+        .btn:hover{
+          animation: pulse 1s;
+        }
+      }
+    }
+  
+    .datos-contacto{
+      text-align: right;
+      float: right;
+      width: 40%;
+      margin-right: 10%;
+    }
+    
+    
+    .datos-contacto div{
+      margin-bottom: 180px;
+    }
+    
+    .datos-contacto div h3{
+      color: #17a2b8;
+      font-family: 'Roboto Slab', serif;
+    }
+    
+    .datos-contacto div p{
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+  }
+}
+
+/*Laptop L Styles*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
   .header-contacto{
     height: 300px;
     .header-logo{
