@@ -1,4 +1,6 @@
 /*PRINCIPAL*/
+
+/*Mobile Styles*/
 @media only screen and (max-width: 400px){
   .header-index{
     width: 100%;
@@ -23,7 +25,7 @@
       margin-left: auto;
       margin-right: 20px;
       padding-top: 0px;
-      font-size: 40px;
+      font-size: 30px;
     }
     .button-tienda{
       display: block;
@@ -47,10 +49,6 @@
       li{
         padding-left: 0px;
         margin-right: 0px;
-        img{
-          width: 80px;
-          height: 80px;
-        }
         .btn{
           display: flex;
           flex-direction: column;
@@ -241,7 +239,7 @@
           border-radius: 10px;
           display: block;
           margin: auto; 
-          width: 350px;
+          width: 80%;
           height: 300px;
         }
       } 
@@ -265,7 +263,7 @@
 } 
 
 /*Tablet Styles*/ 
-@media only screen and (min-width: 401px) and (max-width: 960px){
+@media only screen and (min-width: 401px) and (max-width: 768px){
   .header-index{
     .header-logo{
       display: block;
@@ -292,7 +290,7 @@
           text-transform: capitalize;
           transition: color 0.5s;
           color: black;
-          font-size: 100%;
+          font-size: 1rem;
           }
         }
       }
@@ -329,8 +327,7 @@
           height: 200px;
         }
         .btn{
-          display: flex;
-          flex-direction: column;
+          display: block;
           margin-top: 20px;
           margin-left: 90px;
           margin-right: 50px;
@@ -342,7 +339,7 @@
 
   .columns{
     .columns-list{
-      display: inline-block;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       margin-top: 10px;
@@ -460,7 +457,7 @@
           border-radius: 10px;
           display: block;
           margin: auto; 
-          width: 800px;
+          width: 80%;
           height: 400px;
         }
       } 
@@ -483,9 +480,452 @@
   }
 }
 
+/*Laptop Styles*/ 
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .header-index{
+    .header-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-index{
+      height: 100px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
+        }
+      }
+    }
+    .titulo-index{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
+    }
+
+    .button-tienda{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 25px;
+      }
+  }
+
+  .nuevosIngresos{
+    .nuevosIngresos-titulo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 40px;
+    }
+
+    .nuevosIngresos-list{
+      li{
+        margin: auto;
+        margin-bottom: 80px;
+        img{
+          width: 200px;
+          height: 200px;
+        }
+        .btn{
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          margin-left: 90px;
+          margin-right: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .columns{
+    width: 75%;
+    margin: auto;
+    .columns-list{
+      display: inline-block;
+      flex-direction: column;
+      justify-content: center;
+
+
+      .columns-item{
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding-top: 10px;
+        padding-right: 40px;
+        padding-left: 65px;
+
+        h3{
+          font-size: 20px;
+          font-family: 'Rubik', sans-serif;
+        }
+      }
+    }
+  }
+
+  .topVentas{
+    .topVentas-titulo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 40px;
+    }
+
+    .topVentas-list{
+      li{
+        margin: auto;
+        img{
+          width: 200px;
+          height: 200px;
+        }
+
+        .btn{
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          margin-left: 90px;
+          margin-right: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .footer{
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    position: relative;
+    margin-top: 0px;
+    bottom: 0;
+    .footer-list{
+      background-color: #17a2b8;
+      color: #FFFFFF;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 0px;
+      padding-left: 0px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    
+      li{
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+  
+        h3{
+          font-size: 30px;
+          padding-bottom: 10px;
+        }
+  
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px;
+          a{
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+
+      } 
+      .footer-redesSociales{
+        color: white;
+        .redesSociales1{
+          padding-left: 100px;
+        }
+        .redesSociales2{
+          text-decoration: none;
+          padding-left: 44px;
+          a{
+            color: white;
+            text-decoration: none;
+            padding-left: 5px;
+          }
+        }
+      } 
+
+      .footer-direccion{
+        background-color: #17a2b8;
+        padding-bottom: 40px;
+        iframe{
+          border-radius: 10px;
+          display: block;
+          margin: auto; 
+          width: 80%;
+          height: 400px;
+        }
+      } 
+  
+    .footer-pie{ 
+      width: 100%;
+      font-family: 'IBM Plex Sans', sans-serif;
+      display: block;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      color: #FFFFFF;
+      background-color: #222;
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+/*Laptop L Styles*/ 
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+  .header-index{
+    .header-logo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 100px;
+    }
+  
+    .navBar-index{
+      height: 100px;
+      width: 100%;
+      background-color: white;
+  
+    .navBar-list{
+      .nav-item{
+        width: 180px;
+        text-align: center;
+        transition: color 1.5s;
+        font-size: 100%;
+    
+          a{
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          color: black;
+          font-size: 100%;
+          }
+        }
+      }
+    }
+    .titulo-index{
+      text-align: center;
+      margin-left: auto;
+      margin-right: 28px;
+      padding-top: 30px;
+      font-size: 60px;
+    }
+
+    .button-tienda{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 25px;
+      }
+  }
+
+  .nuevosIngresos{
+    .nuevosIngresos-titulo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 40px;
+    }
+
+    .nuevosIngresos-list{
+      li{
+        display: inline-block;
+        margin-left: 0px auto;
+        margin-right: 0px auto;
+        margin-bottom: 80px;
+        img{
+          width: 200px;
+          height: 200px;
+        }
+        .btn{
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          margin-left: 90px;
+          margin-right: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .columns{
+    width: 75%;
+    margin: auto;
+    .columns-list{
+      display: inline-block;
+      flex-direction: column;
+      justify-content: center;
+
+
+      .columns-item{
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding-top: 10px;
+        padding-right: 40px;
+        padding-left: 65px;
+
+        h3{
+          font-size: 20px;
+          font-family: 'Rubik', sans-serif;
+        }
+      }
+    }
+  }
+
+  .topVentas{
+    .topVentas-titulo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 40px;
+    }
+
+    .topVentas-list{
+      li{
+        display: inline-block;
+        margin-left: 0px auto;
+        margin-right: 0px auto;
+        margin-bottom: 80px;
+        img{
+          width: 200px;
+          height: 200px;
+        }
+
+        .btn{
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          margin-left: 90px;
+          margin-right: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .footer{
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    position: relative;
+    margin-top: 0px;
+    bottom: 0;
+    .footer-list{
+      background-color: #17a2b8;
+      color: #FFFFFF;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 0px;
+      padding-left: 0px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    
+      li{
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+  
+        h3{
+          font-size: 30px;
+          padding-bottom: 10px;
+        }
+  
+        p{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-size: 20px;
+          a{
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+
+      } 
+      .footer-redesSociales{
+        color: white;
+        .redesSociales1{
+          padding-left: 100px;
+        }
+        .redesSociales2{
+          text-decoration: none;
+          padding-left: 44px;
+          a{
+            color: white;
+            text-decoration: none;
+            padding-left: 5px;
+          }
+        }
+      } 
+
+      .footer-direccion{
+        background-color: #17a2b8;
+        padding-bottom: 40px;
+        iframe{
+          border-radius: 10px;
+          display: block;
+          margin: auto; 
+          width: 80%;
+          height: 400px;
+        }
+      } 
+  
+    .footer-pie{ 
+      width: 100%;
+      font-family: 'IBM Plex Sans', sans-serif;
+      display: block;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      color: #FFFFFF;
+      background-color: #222;
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+  }
+}
 
 /*TIENDA*/
 
+/*Mobile Styles*/
 @media only screen and (max-width: 400px){
   .header-libros{
     .navBar-libros{
@@ -633,6 +1073,8 @@
 }
 
 /*GUIA DE COMPRA*/
+
+/*Mobile Styles*/
 @media only screen and (max-width: 400px){
   .header-guiadecompra{
     height: 700px;
@@ -1072,6 +1514,7 @@
 
 /*SOBRE NOSOTROS*/
 
+/*Mobile Styles*/
 @media only screen and (max-width: 400px){
   .header-marca{
     height: 700px;
@@ -1288,6 +1731,8 @@
 }
 
 /*CONTACTO*/
+
+/*Mobile Styles*/
 @media only screen and (max-width: 400px){
   .header-contacto{
     height: 300px;
